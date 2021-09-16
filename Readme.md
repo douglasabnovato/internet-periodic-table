@@ -60,12 +60,15 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 
 Meu planejamento
 
-1. ProDoc315: Consumir e organizar todos os arquivos de referências do desafio no projeto
-2. Adicionar duas ideias de tarefas, além das sugeridas.
-    a.  ProDoc316: Adicionar elementos extras conforme é a tabela original com outras aplicações.
-    b.  ProDoc317: Publicar essa aplicação em um servidor gratuito.
-3. ProDoc318: Utilizar o git com commits sugestivos a um gitFlow-ProDoctor.
-4. ProDoc319: Criar um identificar de cada tarefas para simular um gestor de tarefas. 
+1. ProDoc315: Utilizar o git com commits sugestivos a um gitFlow-ProDoctor. - [ ]
+2. ProDoc316: Criar um identificador de cada tarefas para simular um gestor. - [ ] 
+3. ProDoc317: Consumir e organizar todos os arquivos de referências do desafio no projeto - [x]
+4. Adicionar ideias de tarefas, além das sugeridas.
+    a.  ProDoc318: Adicionar elementos extras conforme é a tabela original com outras aplicações. Lembrando de validar o item ProDoc220. - [ ]
+    b.  ProDoc319: Publicar essa aplicação em um servidor gratuito. - [ ]
+    c.  ProDoc320: Editado ícones e links de redes sociais - [ ]
+
+Responder algumas perguntas
 
 [git]: https://git-scm.com/doc
 [github]: https://docs.github.com/en
