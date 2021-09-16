@@ -66,7 +66,8 @@ Meu planejamento
 4. Adicionar ideias de tarefas, além das sugeridas.
     a.  ProDoc318: Adicionar elementos extras conforme é a tabela original com outras aplicações. Lembrando de validar o item ProDoc220. - [ ]
     b.  ProDoc319: Publicar essa aplicação em um servidor gratuito. - [ ]
-    c.  ProDoc320: Editado ícones e links de redes sociais - [ ]
+    c.  ProDoc320: Editar ícones e links de redes sociais - [x]
+    d.  ProDoc321: Não remover a prévia descrição quando passa o mouse sobre o elemento - [x]
 
 Responder algumas perguntas
 
