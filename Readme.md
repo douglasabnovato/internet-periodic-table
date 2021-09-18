@@ -71,6 +71,17 @@ Meu planejamento
 
 Responder algumas perguntas
 
+Explicar:
+1. o css do degradê
+2. animação da cor do hover
+3. animação da explicação do hover
+4. o clique para abertura do modal
+5. o efeito de seleção conforme clica na legenda
+
+Maior dificuldade:
+1. manipular o json
+2. mudar o html 
+
 [git]: https://git-scm.com/doc
 [github]: https://docs.github.com/en
 [css]: https://developer.mozilla.org/en-US/docs/Web/CSS 

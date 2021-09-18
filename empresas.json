@@ -1,5 +1,6 @@
 {
-    "Empresas": [
+    "Empresas":
+    [
         {
             "Abreviacao": "Li",
             "Coluna": 1,
@@ -281,3 +282,4 @@
         }
     ]
 }
+ 
