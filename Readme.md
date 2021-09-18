@@ -80,7 +80,7 @@ Explicar:
 
 Maior dificuldade:
 1. manipular o json
-2. mudar o html 
+2. mudar o html de estilizar um elemento para um for de elementos
 
 [git]: https://git-scm.com/doc
 [github]: https://docs.github.com/en
