@@ -1,5 +1,5 @@
 const header = document.querySelector('header');
-const section = document.querySelector('section');
+const section = document.querySelector('div.periodic-table');
 
 var requestURL = 'empresas.json';
 var request = new XMLHttpRequest();
@@ -17,7 +17,7 @@ request.onload = function() {
 function populateHeader(jsonObj) {
     var myH1 = document.createElement('h1');
     myH1.textContent = jsonObj['tituloProjeto'];
-    
+
     header.appendChild(myH1);
 
     var myH5 = document.createElement('h5');
@@ -28,23 +28,48 @@ function populateHeader(jsonObj) {
 
 function showEmpresas(jsonObj) {
     var apps = jsonObj['Empresas'];
+ 
+     
 
-    for (var i = 0; i < apps.length; i++) {
-        
-        var myArticle = document.createElement('article');
+    for (var i = 0; i < apps.length; i++) {  
+        if(apps[i].Grupo == "Social Media"){
+            var myElement = document.createElement('div');
+            myElement.className = 'periodic-element social-media';  
+        } else if(apps[i].Grupo == "Personal Development"){
+            var myElement = document.createElement('div');
+            myElement.className = 'periodic-element just-trying';  
+        } else if(apps[i].Grupo == "Serious Work"){
+            var myElement = document.createElement('div');
+            myElement.className = 'periodic-element intense-work';  
+        } else if(apps[i].Grupo == "Fun Stuff"){
+            var myElement = document.createElement('div');
+            myElement.className = 'periodic-element fun-stuff';  
+        }
+ 
+            var myAction = document.createElement('a'); 
+            myAction.href = "#open-modal";
 
-        var myH2 = document.createElement('h2');
-        var myPara1 = document.createElement('p');
-        var myPara2 = document.createElement('p');
+                var myBox = document.createElement('div');
+                myBox.className = 'periodic-element-inner'; 
+
+                    var myAbrev = document.createElement('div');
+                    myAbrev.className = 'title'; 
+
+                    var myNome = document.createElement('div');
+                    myNome.className = 'description'; 
           
-        myH2.textContent = apps[i].Abreviacao;
-        myPara1.textContent = apps[i].Nome; 
-        myPara2.textContent = apps[i].Descricao;
+                    myAbrev.textContent = apps[i].Abreviacao;
+                    myNome.textContent = apps[i].Nome;  
   
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2); 
+                myBox.appendChild(myAbrev);
+                myBox.appendChild(myNome); 
+            
+            myAction.appendChild(myBox);
+        
+        myElement.appendChild(myAction);
+  
+        section.appendChild(myElement);  
 
-        section.appendChild(myArticle);
-    }
+    }  
+
 }
