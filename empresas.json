@@ -3,6 +3,52 @@
     "fraseProjeto" : "Como eu perco o meu tempo na internet?",
     "Empresas":
     [
+    {
+        "Abreviacao": "",
+        "Coluna": 3,
+        "Cor": "",
+        "Descricao": "",
+        "Grupo": "EmptySpacer1",
+        "Linha": 1,
+        "Nome": ""
+    },
+    {
+        "Abreviacao": "",
+        "Coluna": 4,
+        "Cor": "",
+        "Descricao": "",
+        "Grupo": "EmptySpacer1",
+        "Linha": 1,
+        "Nome": ""
+    },
+    {
+        "Abreviacao": "",
+        "Coluna": 5,
+        "Cor": "",
+        "Descricao": "",
+        "Grupo": "EmptySpacer1",
+        "Linha": 1,
+        "Nome": ""
+    },
+    {
+        "Abreviacao": "",
+        "Coluna": 6,
+        "Cor": "",
+        "Descricao": "",
+        "Grupo": "EmptySpacer1",
+        "Linha": 1,
+        "Nome": ""
+    },
+    {
+        "Abreviacao": "",
+        "Coluna": 1,
+        "Cor": "",
+        "Descricao": "",
+        "Grupo": "EmptySpacer2",
+        "Linha": 4,
+        "Nome": ""
+    },
+        
         {
             "Abreviacao": "Li",
             "Coluna": 1,

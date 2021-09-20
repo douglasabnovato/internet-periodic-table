@@ -44,6 +44,12 @@ function showEmpresas(jsonObj) {
         } else if(apps[i].Grupo == "Fun Stuff"){
             var myElement = document.createElement('div');
             myElement.className = 'periodic-element fun-stuff';  
+        }else if(apps[i].Grupo == "EmptySpacer1"){
+            var myElement = document.createElement('div');
+            myElement.className = 'empty-spacer-1';  
+        }else if(apps[i].Grupo == "EmptySpacer2"){
+            var myElement = document.createElement('div');
+            myElement.className = 'empty-spacer-2';  
         }
  
             var myAction = document.createElement('a'); 
