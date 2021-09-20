@@ -1,3 +1,5 @@
+  /* Gerais */
+  
   body {
     background: #202e38;
     font-family: "Poppins", sans-serif;
@@ -21,6 +23,7 @@
     text-decoration: none;
   } 
   
+  /* Rodapé com os links das redes sociais */
   footer {
     text-align: center;
     margin: 2em auto;
@@ -46,6 +49,7 @@
     font-size: 20px;
   }
   
+  /* Div Principal da Tabela [Estática] */
   .periodic-table {
     display: grid;
     grid-template-columns: repeat(9, 100px);
@@ -55,7 +59,7 @@
     max-width: 1200px;
     justify-content: center;
   }
-  
+  /* Div de Elemento da Tabela */
   .periodic-element {
     padding: 4px;
     position: relative;
@@ -63,6 +67,7 @@
     cursor: default;
     transition: all 0.3s ease;
   }
+  /* Div Interna ( inner ) do Elemento da Tabela */
   .periodic-element .periodic-element-inner {
     background: #202e38;
     padding: 10px 15px;
@@ -79,6 +84,7 @@
     font: 500 12px "Poppins", sans-serif;
     margin-top: -0.2em;
   }
+  /* Div de Elemento da Tabela:hover - a animação ao passar o mouse sobre o elemento */
   .periodic-element:after {
     z-index: 10;
     content: attr(dataDescription);
@@ -113,10 +119,12 @@
     opacity: 1;
   }
   
+  /* Link e Cursor */
   a.periodic-element {
     cursor: pointer;
   }
-  
+
+  /* Estilização do Grupo: social-media (mídia social) */
   .social-media {
     background: linear-gradient(to bottom right, #f3f9a6 0%, #cbc634 100%);
   }
@@ -127,6 +135,7 @@
     -webkit-text-fill-color: transparent;
   }
   
+  /* Estilização do Grupo: fun-stuff (coisas divertidas) */
   .fun-stuff {
     background: linear-gradient(to bottom right, #ff616d 0%, #ffc171 100%);
   }
@@ -137,6 +146,7 @@
     -webkit-text-fill-color: transparent;
   }
   
+  /* Estilização do Grupo: just-trying (Personal Development) */
   .just-trying {
     background: linear-gradient(to bottom right, #37cfdc 0%, #5a88e5 100%);
   }
@@ -147,6 +157,7 @@
     -webkit-text-fill-color: transparent;
   }
   
+  /* Estilização do Grupo: intense-work (Serious Work) */
   .intense-work {
     background: linear-gradient(to bottom right, #58ac30 0%, #a7df62 100%);
   }
@@ -157,6 +168,7 @@
     -webkit-text-fill-color: transparent;
   }
   
+  /* Legenda da Tabela */
   .legend-table {
     padding: 15px;
     text-align: center;
@@ -187,6 +199,7 @@
     -webkit-text-fill-color: transparent;
   }
   
+  /* Espaço vazio na tabela */
   .empty-spacer-1 {
     grid-column: 3/span 4;
     grid-row: 1;
@@ -196,6 +209,7 @@
     grid-row: 4;
   }
 
+  /* Estilização do Modal */
   .modal-window {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.25);
@@ -229,8 +243,7 @@
   .modal-window h1 {
     font-size: 150%;
     margin: 0 0 15px;
-  }
-  
+  } 
   .modal-close {
     color: #aaa;
     line-height: 50px;
@@ -244,12 +257,10 @@
   }
   .modal-close:hover {
     color: black;
-  }
-
+  } 
   .modal-window > div {
     border-radius: 1rem;
-  }
-  
+  } 
   .modal-window div:not(:last-of-type) {
     margin-bottom: 15px;
   }

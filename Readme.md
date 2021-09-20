@@ -8,20 +8,15 @@ Esse desafio é uma forma de conhecer um pouco mais de você como programador(a)
 
 Não será avaliado somente o código, mas também a motivação da solução apresentada, seja ela qual for.
 
-Baseado no arquivo empresas.json, que você pode obter nesse link, deve ser construído uma tabela onde é visualizado alguns sites da internet, separados pelos seguintes grupos: 
-
-- "Social Media"
-- "Serious Work"
-- "Personal Development"
-- "Fun Stuff". 
+Baseado no arquivo empresas.json, que você pode obter nesse link, deve ser construído uma tabela onde é visualizado alguns sites da internet, separados pelos seguintes grupos: "Social Media", "Serious Work", "Personal Development" e "Fun Stuff". 
 
 A base para a diagramação das informações visualizadas no arquivo json será 
-https://codepen.io/oliviale/pen/ZmvPPd.
+- [Codepen Projeto A](https://codepen.io/oliviale/pen/ZmvPPd)
 
 Exemplos de apps criados: 
-https://drive.google.com/file/d/1ytAPwfjS1RTQeLs031-NV_DKB7ZsA7KL/view?usp=sharing
-https://drive.google.com/file/d/1TAYMbZJ1Rt9MoEwWJyQfmkjndmxrLXze/view?usp=sharing
-https://drive.google.com/file/d/1Klq4GgfCZYygFGg8mBMZC_cO1VXo-eWn/view?usp=sharing
+- [Demo Projeto 1](https://drive.google.com/file/d/1ytAPwfjS1RTQeLs031-NV_DKB7ZsA7KL/view?usp=sharing) 
+- [Demo Projeto 2](https://drive.google.com/file/d/1TAYMbZJ1Rt9MoEwWJyQfmkjndmxrLXze/view?usp=sharing)
+- [Demo Projeto 3](https://drive.google.com/file/d/1Klq4GgfCZYygFGg8mBMZC_cO1VXo-eWn/view?usp=sharing)
 
 ## 🛠 Tecnologias
 
@@ -36,7 +31,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 A partir dessa diagramação você deverá:
 
 - [x] ProDoc115: Criar a tabela periódica baseada nos dados do JSON fornecido;
-- [ ] ProDoc116: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele;
+- [x] ProDoc116: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele;
 - [ ] ProDoc117: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda;
 - [ ] ProDoc118: Fazer o responsivo sem desmembrar os itens do aspecto que eles estão.
 - [ ] ProDoc119: Com isso, os mesmos devem ficar flexíveis pelo menos para caber em 1024px da tela sem distorção. 

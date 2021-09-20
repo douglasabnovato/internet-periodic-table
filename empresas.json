@@ -1,6 +1,6 @@
 {
-    "tituloProjeto" : "Minha Tabela Periódica da Internet",
-    "fraseProjeto" : "Como eu perco o meu tempo na internet?",
+    "tituloProjeto" : "My Internet Periodic Table",
+    "fraseProjeto" : "How I waste my time on the Internet?",
     "Empresas":
     [
     {
@@ -172,7 +172,7 @@
             "Explicacao": "A skill I&#39;m trying to learn 🎨... and failing to learn 😛",
             "Grupo": "Personal Development",
             "Linha": 2,
-            "Nome": "Ilustratin"
+            "Nome": "Illustration"
         },
         {
             "Abreviacao": "Te",
