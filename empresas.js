@@ -34,26 +34,33 @@ function showEmpresas(jsonObj) {
     for (var i = 0; i < apps.length; i++) {  
         if(apps[i].Grupo == "Social Media"){
             var myElement = document.createElement('div');
-            myElement.className = 'periodic-element social-media';  
+            myElement.className = 'periodic-element social-media';
+            myElement.setAttribute("dataDescription", apps[i].Explicacao);      
         } else if(apps[i].Grupo == "Personal Development"){
             var myElement = document.createElement('div');
-            myElement.className = 'periodic-element just-trying';  
+            myElement.className = 'periodic-element just-trying'; 
+            myElement.setAttribute("dataDescription", apps[i].Explicacao);  
         } else if(apps[i].Grupo == "Serious Work"){
             var myElement = document.createElement('div');
-            myElement.className = 'periodic-element intense-work';  
+            myElement.className = 'periodic-element intense-work'; 
+            myElement.setAttribute("dataDescription", apps[i].Explicacao);  
         } else if(apps[i].Grupo == "Fun Stuff"){
             var myElement = document.createElement('div');
-            myElement.className = 'periodic-element fun-stuff';  
+            myElement.className = 'periodic-element fun-stuff'; 
+            myElement.setAttribute("dataDescription", apps[i].Explicacao);  
         }else if(apps[i].Grupo == "EmptySpacer1"){
             var myElement = document.createElement('div');
             myElement.className = 'empty-spacer-1';  
+            myElement.setAttribute("dataDescription", apps[i].Explicacao); 
         }else if(apps[i].Grupo == "EmptySpacer2"){
             var myElement = document.createElement('div');
             myElement.className = 'empty-spacer-2';  
+            myElement.setAttribute("dataDescription", apps[i].Explicacao); 
         }
  
+ 
             var myAction = document.createElement('a'); 
-            myAction.href = "#open-modal";
+            myAction.href = "#open-modal"; 
 
                 var myBox = document.createElement('div');
                 myBox.className = 'periodic-element-inner'; 

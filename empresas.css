@@ -81,7 +81,7 @@
   }
   .periodic-element:after {
     z-index: 10;
-    content: attr(data-description);
+    content: attr(dataDescription);
     background: #f9f8f7;
     color: #333;
     width: 180px;
