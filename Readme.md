@@ -35,7 +35,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 A partir dessa diagramação você deverá:
 
-- [ ] ProDoc115: Criar a tabela baseada no JSON fornecido;
+- [x] ProDoc115: Criar a tabela periódica baseada nos dados do JSON fornecido;
 - [ ] ProDoc116: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele;
 - [ ] ProDoc117: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda;
 - [ ] ProDoc118: Fazer o responsivo sem desmembrar os itens do aspecto que eles estão.
