@@ -39,7 +39,7 @@ A partir dessa diagramação você deverá:
 - [ ] ProDoc117: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda;
 - [ ] ProDoc118: Fazer o responsivo sem desmembrar os itens do aspecto que eles estão.
 - [ ] ProDoc119: Com isso, os mesmos devem ficar flexíveis pelo menos para caber em 1024px da tela sem distorção. 
-- [ ] ProDoc120: Abaixo desta resolução, deve ser criado uma barra de rolagem ou algo criativo que possa ser utilizado em dispositivos móveis. 
+- [ ] ProDoc120: Abaixo desta resolução, criar uma barra de rolagem ou algo criativo, para ser utilizado em dispositivos móveis. 
 
 Mas sempre mantendo o aspecto de tabela periódica;
 
@@ -52,7 +52,7 @@ Desafíos extras:
 - [ ] ProDoc219: Opções de acessibilidade no teclado: trocar o foco com a tecla tab, acessar o modal com barra ou enter;
 - [ ] ProDoc220: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
 - [ ] ProDoc221: A tabela deve ser dinâmica, caso um novo elemento seja adicionado ao JSON, deve adicionar a tabela;
-- [ ] ProDoc222: Caso um novo elemento de um novo grupo seja adicionado ao JSON, o efeito de selecionar o grupo na legenda deve contemplar esse novo elemento.
+- [ ] ProDoc222: Caso um novo elemento de um novo grupo seja criado ao JSON, atender ao item ProDoc117.
 
 Esse roteiro é apenas um norte de opções para realizar o desafio, mas você está livre para fazer outras coisas. Não se limite em termos de criatividade. 
 
@@ -64,7 +64,7 @@ Meu planejamento
 - [x] 2. ProDoc316: Criar um identificador de cada tarefas para simular um gestor. 
 - [x] 3. ProDoc317: Consumir e organizar todos os arquivos de referências do desafio no projeto 
 4. Adicionar ideias de tarefas, além das sugeridas.</br>
-    - [ ] a.  ProDoc318: Adicionar elementos extras conforme é a tabela original com outras aplicações. Lembrando de validar o item ProDoc221. </br>
+    - [ ] a.  ProDoc318: Adicionar elementos extras na tabela. Lembrando de validar o item ProDoc221. </br>
     - [ ] b.  ProDoc319: Publicar essa aplicação em um servidor gratuito. </br>
     - [x] c.  ProDoc320: Editar ícones e links de redes sociais </br>
     - [x] d.  ProDoc321: Não remover a prévia descrição quando passa o mouse sobre o elemento. Adicionar essa informação ao json. </br>
