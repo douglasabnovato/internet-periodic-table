@@ -167,6 +167,27 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+   
+  /* Estilização do Grupo: Espaço vazio na tabela */
+  .empty-spacer-1 {
+    grid-column: 3/span 4;
+    grid-row: 1;
+  }
+  .empty-spacer-2 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  /* Estilização do Novo Grupo: douglas-novato (Douglas Novato) clara: #DA70D6 - forte: #C71585 */
+  .douglas-novato {
+    background: linear-gradient(to bottom right, #DA70D6 0%, #C71585 100%);
+  }
+  .douglas-novato .title,
+  .douglas-novato .description {
+    background: -webkit-linear-gradient(#DA70D6, #C71585);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   
   /* Legenda da Tabela */
   .legend-table {
@@ -197,16 +218,6 @@
     background: -webkit-linear-gradient(#ccc, #eee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  
-  /* Espaço vazio na tabela */
-  .empty-spacer-1 {
-    grid-column: 3/span 4;
-    grid-row: 1;
-  }
-  .empty-spacer-2 {
-    grid-column: 1;
-    grid-row: 4;
   }
 
   /* Estilização do Modal */

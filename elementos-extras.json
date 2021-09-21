@@ -162,8 +162,7 @@
             "Linha": 6,
             "Nome": "Douglas"
         },
-        {
-            
+        { 
             "Abreviacao": "Dg",
             "Coluna": 8,
             "Cor": "#58AC30",
@@ -173,8 +172,7 @@
             "Linha": 6,
             "Nome": "Douglas"
         },
-        {
-            
+        { 
             "Abreviacao": "Dg",
             "Coluna": 9,
             "Cor": "#58AC30",
@@ -183,6 +181,33 @@
             "Grupo": "Serious Work",
             "Linha": 6,
             "Nome": "Douglas"
+        },
+        { 
+            "Abreviacao": "Dn",
+            "Coluna": 1,
+            "Cor": "#C71585",
+            "Descricao": "Sailfish tiger shovelnose catfish Celebes.",
+            "Explicacao": "🙃comics comics comics 🙃",
+            "Grupo": "Douglas Novato",
+            "Linha": 7,
+            "Nome": "Douglas"
+        },
+        {
+            
+            "Abreviacao": "Dn",
+            "Coluna": 2,
+            "Cor": "#C71585",
+            "Descricao": "Sailfish tiger shovelnose catfish Celebes.",
+            "Explicacao": "🙃comics comics comics 🙃",
+            "Grupo": "Douglas Novato",
+            "Linha": 7,
+            "Nome": "Douglas"
         }
     ]
 }
+
+
+<a id="douglasnovato" href="#" onclick="selectedDn(this)">
+    <span class="legend-table__marker douglas-novato"></span>
+    <span class="legend-table__text">Douglas Novato</span>
+</a>

@@ -52,7 +52,7 @@ Lembre-se sempre, manter o aspecto de tabela periódica.
 - [ ] ProDoc219: Opções de acessibilidade no teclado: trocar o foco com a tecla tab, acessar o modal com barra ou enter;
 - [ ] ProDoc220: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
 - [x] ProDoc221: A tabela deve ser dinâmica, caso um novo elemento de um grupo já existente seja adicionado ao JSON, deve adicionar a tabela;
-- [ ] ProDoc222: Caso um novo elemento de um novo grupo seja criado ao JSON, atender ao item ProDoc117.
+- [x] ProDoc222: Caso um novo elemento de um novo grupo seja criado ao JSON, atender ao item ProDoc117.
 
 Esse roteiro é apenas um norte de opções para realizar o desafio, mas está livre para fazer outras criações. Não se limite em termos de criatividade. 
 

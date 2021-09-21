@@ -56,6 +56,10 @@ function showEmpresas(jsonObj) {
             var myElement = document.createElement('div');
             myElement.className = 'empty-spacer-2';  
             myElement.setAttribute("dataDescription", apps[i].Explicacao); 
+        }else if(apps[i].Grupo == "Douglas Novato"){
+            var myElement = document.createElement('div');
+            myElement.className = 'periodic-element douglas-novato';  
+            myElement.setAttribute("dataDescription", apps[i].Explicacao); 
         }
  
  
@@ -163,6 +167,28 @@ function selectedFt(obj) {
  
     var myGroup, i;
     myGroup = document.querySelectorAll("div.fun-stuff");  
+
+    console.log(myGroup); 
+
+    for (i = 0; i < myGroup.length; i++) {  
+        myGroup[i].style.color = 'blue';
+        myGroup[i].style.backgroundColor = 'yellow';
+        myGroup[i].style.border = '6px solid magenta';
+        console.log(myGroup[i]);
+    }      
+ 
+}
+
+function selectedDn(obj) {
+
+    obj.style.paddingTop = "10px";
+    obj.style.paddingBottom = "10px"; 
+    obj.style.backgroundColor = "#FFFFFF";   
+    obj.style.color = "lightblue"; 
+    obj.style.font = "bold"; 
+ 
+    var myGroup, i;
+    myGroup = document.querySelectorAll("div.douglas-novato");  
 
     console.log(myGroup); 
 
