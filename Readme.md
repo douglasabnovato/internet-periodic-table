@@ -3,7 +3,7 @@
 </h4> 
 
 <h1 align="center">
-    <img alt="periodictable" title="#PeriodicTable" src="./tela-1.jpg" />
+    <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-1.jpg" />
 </h1>
 
 ## 🚀 Descrição do Desafio
