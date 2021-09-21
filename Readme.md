@@ -65,7 +65,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas está l
 - [x] 3. ProDoc317: Consumir e organizar todos os arquivos de referências do desafio no projeto </br>
 4. Adicionar ideias de tarefas, além das sugeridas. 
     - [x] a.  ProDoc318: Adicionar elementos extras na tabela. Lembrando de validar o item ProDoc221. 
-    - [ ] b.  ProDoc319: Publicar essa aplicação em um servidor gratuito. 
+    - [x] b.  ProDoc319: Publicar essa aplicação em um servidor gratuito: [periodic table on netlify](https://musing-poitras-bf14e7.netlify.app/)
     - [x] c.  ProDoc320: Editar ícones e links de redes sociais 
     - [x] d.  ProDoc321: Não remover a prévia descrição quando passa o mouse sobre o elemento. Adicionar essa informação ao json. 
 
