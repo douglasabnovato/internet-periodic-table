@@ -79,9 +79,10 @@ Explicar as maiores dificuldades:
 ## 🛠 Versão Final
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="periodictable" title="#PeriodicTable" src="/tela-1.jpg" width="400px">
-  <img alt="periodictable" title="#PeriodicTable" src="/tela-2.jpg" width="400px">
-  <img alt="periodictable" title="#PeriodicTable" src="/tela-3.jpg" width="400px"> 
+  <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-1.jpg" width="400px">
+  <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-2.jpg" width="400px">
+  <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-3.jpg" width="400px"> 
+  <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-4.jpg" width="400px"> 
 </p>
 
 [git]: https://git-scm.com/doc
