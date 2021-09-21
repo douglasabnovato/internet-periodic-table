@@ -69,12 +69,13 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas está l
     - [x] c.  ProDoc320: Editar ícones e links de redes sociais 
     - [x] d.  ProDoc321: Não remover a prévia descrição quando passa o mouse sobre o elemento. Adicionar essa informação ao json. 
 
-#### Responder algumas perguntas
+#### Analisar itens de maior complexidade 
 
-Explicar as maiores dificuldades:
 1. o css do degradê 
 2. o clique para abertura do modal
-3. o efeito de seleção conforme clica na legenda 
+3. o efeito de seleção conforme o marcar/desmarcar na legenda
+4. o posicionamento da tabela ao clicar na legenda 
+<img alt="dificuldade" title="#dificuldade" src="/assets/dificuldade.jpg" width="400px">
 
 ## 🛠 Versão Final
 

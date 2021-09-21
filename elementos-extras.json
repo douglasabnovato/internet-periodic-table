@@ -1,3 +1,5 @@
+
+//Inserir na linha 367 do empresas.json
 { 
     [ 
         {
@@ -206,7 +208,7 @@
     ]
 }
 
-
+//Inserir na linha 43 do index.html
 <a id="douglasnovato" href="#" onclick="selectedDn(this)">
     <span class="legend-table__marker douglas-novato"></span>
     <span class="legend-table__text">Douglas Novato</span>
