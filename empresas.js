@@ -14,6 +14,8 @@ request.onload = function() {
     showEmpresas(empresas);
 }
 
+
+
 function populateHeader(jsonObj) {
     var myH1 = document.createElement('h1');
     myH1.textContent = jsonObj['tituloProjeto'];
@@ -28,9 +30,7 @@ function populateHeader(jsonObj) {
 
 function showEmpresas(jsonObj) {
     var apps = jsonObj['Empresas'];
- 
-     
-
+  
     for (var i = 0; i < apps.length; i++) {  
         if(apps[i].Grupo == "Social Media"){
             var myElement = document.createElement('div');

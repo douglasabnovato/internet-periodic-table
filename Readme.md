@@ -46,12 +46,13 @@ Mas sempre mantendo o aspecto de tabela periódica;
 Desafíos extras:
 
 - [ ] ProDoc215: Ao clicar sobre um elemento, abrir um modal que apresente a informação de descrição, propriedade "Descrição" presente no JSON de referência. 
-- [ ] ProDoc216: O modal deve fechar ao clicar fora da área de conteúdo, mas o ideal é que seja criado também um botão (X) auxiliar que serve para fechá-lo. 
-- [ ] ProDoc217: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
-- [ ] ProDoc218: Opções de acessibilidade no teclado como trocar o foco dos itens na tabela ao apertar a tecla tab e acessar o modal apertando as teclas barra de espaço ou enter;
-- [ ] ProDoc219: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
-- [ ] ProDoc220: A tabela deve ser dinâmica, caso um novo elemento seja adicionado ao JSON, ele deve ser adicionado visualmente a tabela;
-- [ ] ProDoc221: Caso um novo elemento de um novo grupo seja adicionado ao JSON, o efeito de selecionar o grupo na legenda deve contemplar esse novo elemento.
+- [ ] ProDoc216: O modal deve fechar ao clicar fora da área de conteúdo. 
+- [ ] ProDoc217: O ideal é que seja criado também um botão (X) auxiliar que serve para fechar o modal. 
+- [ ] ProDoc218: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
+- [ ] ProDoc219: Opções de acessibilidade no teclado como trocar o foco dos itens na tabela ao apertar a tecla tab e acessar o modal apertando as teclas barra de espaço ou enter;
+- [ ] ProDoc220: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
+- [ ] ProDoc221: A tabela deve ser dinâmica, caso um novo elemento seja adicionado ao JSON, ele deve ser adicionado visualmente a tabela;
+- [ ] ProDoc222: Caso um novo elemento de um novo grupo seja adicionado ao JSON, o efeito de selecionar o grupo na legenda deve contemplar esse novo elemento.
 
 Esse roteiro é apenas um norte de opções para realizar o desafio, mas você está livre para fazer outras coisas. Não se limite em termos de criatividade. 
 
@@ -59,14 +60,14 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 
 Meu planejamento
 
-- [ ] 1. ProDoc315: Utilizar o git com commits sugestivos a um gitFlow-ProDoctor. 
-- [ ] 2. ProDoc316: Criar um identificador de cada tarefas para simular um gestor. 
-- [ ] 3. ProDoc317: Consumir e organizar todos os arquivos de referências do desafio no projeto 
+- [x] 1. ProDoc315: Utilizar o git com commits sugestivos a um "gitFlow-ProDoctor". 
+- [x] 2. ProDoc316: Criar um identificador de cada tarefas para simular um gestor. 
+- [x] 3. ProDoc317: Consumir e organizar todos os arquivos de referências do desafio no projeto 
 4. Adicionar ideias de tarefas, além das sugeridas.</br>
     - [ ] a.  ProDoc318: Adicionar elementos extras conforme é a tabela original com outras aplicações. Lembrando de validar o item ProDoc220. </br>
     - [ ] b.  ProDoc319: Publicar essa aplicação em um servidor gratuito. </br>
-    - [ ] c.  ProDoc320: Editar ícones e links de redes sociais </br>
-    - [ ] d.  ProDoc321: Não remover a prévia descrição quando passa o mouse sobre o elemento </br>
+    - [x] c.  ProDoc320: Editar ícones e links de redes sociais </br>
+    - [x] d.  ProDoc321: Não remover a prévia descrição quando passa o mouse sobre o elemento. Adicionar essa informação ao json. </br>
 
 Responder algumas perguntas
 
