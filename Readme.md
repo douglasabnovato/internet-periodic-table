@@ -75,12 +75,12 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas está l
 2. o clique para abertura do modal
 3. o efeito de seleção conforme o marcar/desmarcar na legenda
 4. o posicionamento da tabela ao clicar na legenda 
-<img alt="dificuldade" title="#dificuldade" src="/assets/dificuldade.jpg" width="400px">
+<img alt="dificuldade" title="#dificuldade" src="/assets/dificuldade.jpeg" width="400px">
 
 ## 🛠 Versão Final
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-1.jpeg" width="400px">
+  <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-1.jpg" width="400px">
   <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-4.jpg" width="400px"> 
   <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-2.jpg" width="400px">
   <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-3.jpg" width="400px"> 
