@@ -1,4 +1,5 @@
-,
+{ 
+    [ 
         {
             
             "Abreviacao": "Dg",
@@ -183,3 +184,5 @@
             "Linha": 6,
             "Nome": "Douglas"
         }
+    ]
+}
