@@ -86,3 +86,8 @@ function showEmpresas(jsonObj) {
     }  
 
 }
+
+function selectedLegend(obj) { 
+    obj.style.backgroundColor = "#FFFFFF"; 
+    
+}

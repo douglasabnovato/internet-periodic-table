@@ -2,6 +2,10 @@
 	🚧 Desafio Tabela Periódica 🚀
 </h4> 
 
+<h1 align="center">
+    <img alt="periodictable" title="#PeriodicTable" src="./tela-1.jpg" />
+</h1>
+
 ## 🚀 Descrição do Desafio
 
 Esse desafio é uma forma de conhecer um pouco mais de você como programador(a) e a sua forma de pensar o cotidiano Front-End. 
@@ -76,6 +80,13 @@ Explicar:
 Maior dificuldade:
 1. manipular o json
 2. mudar o html de estilizar um elemento para um for de elementos
+
+## 🛠 Versão Final
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="periodictable" title="#PeriodicTable" src="/tela-2.jpg" width="400px">
+  <img alt="periodictable" title="#PeriodicTable" src="/tela-3.jpg" width="400px"> 
+</p>
 
 [git]: https://git-scm.com/doc
 [github]: https://docs.github.com/en

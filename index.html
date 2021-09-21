@@ -21,14 +21,35 @@
         </div>
 
         <div class="legend-table"> 
-            <div class="legend-table__wrapper"> 
-            <span class="legend-table__marker social-media"></span><span class="legend-table__text">Social Media</span><span class="legend-table__marker intense-work"></span><span class="legend-table__text">Serious Work</span><span class="legend-table__marker just-trying"></span><span class="legend-table__text">Personal Development</span><span class="legend-table__marker fun-stuff"></span><span class="legend-table__text">Fun Stuff</span><br /> 
-            <div class="legend-table__direction">
-                <span>&#8594; &ensp; Across the table: Importance</span>
-            </div> 
-            <div class="legend-table__direction">
-                <span>&#8595; &ensp; Down the table: Time Spent</span>
-            </div> 
+
+            <div class="legend-table__wrapper">  
+                
+                <a id="socialmedia" href="#" onclick="selectedLegend(this)">
+                    <span class="legend-table__marker social-media"></span>
+                    <span class="legend-table__text">Social Media</span> 
+                </a>
+                <a id="intensework" href="#" onclick="selectedLegend(this)">
+                    <span class="legend-table__marker intense-work"></span>
+                    <span class="legend-table__text">Serious Work</span>
+                </a>
+                <a id="justtrying" href="#" onclick="selectedLegend(this)">
+                    <span class="legend-table__marker just-trying"></span>
+                    <span class="legend-table__text">Personal Development</span>
+                </a>
+                <a id="funstuff" href="#" onclick="selectedLegend(this)">
+                    <span class="legend-table__marker fun-stuff"></span>
+                    <span class="legend-table__text">Fun Stuff</span>
+                </a>
+                
+                <br /> 
+
+                <div class="legend-table__direction">
+                    <span>&#8594; &ensp; Across the table: Importance</span>
+                </div> 
+                <div class="legend-table__direction">
+                    <span>&#8595; &ensp; Down the table: Time Spent</span>
+                </div> 
+
             </div> 
         </div> 
 
@@ -57,6 +78,7 @@
                 <i class="icon-social-dribbble icons"></i>
             </a>
         </footer> 
+
     </body>  
     <script type="text/javascript" src="empresas.js"></script>
 </html>
