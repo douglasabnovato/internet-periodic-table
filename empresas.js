@@ -87,20 +87,91 @@ function showEmpresas(jsonObj) {
 
 }
 
-function selectedLegend(obj) {
+function selectedSm(obj) {
 
     obj.style.paddingTop = "10px";
     obj.style.paddingBottom = "10px"; 
-    obj.style.backgroundColor = "#FFFFFF";  
+    obj.style.backgroundColor = "#FFFFFF";   
     obj.style.color = "lightblue"; 
     obj.style.font = "bold"; 
-
  
     var myGroup, i;
-    myGroup = document.querySelectorAll("div.social-media"); 
+    myGroup = document.querySelectorAll("div.social-media");  
+
+    console.log(myGroup); 
 
     for (i = 0; i < myGroup.length; i++) {  
+        myGroup[i].style.color = 'blue';
+        myGroup[i].style.backgroundColor = 'yellow';
+        myGroup[i].style.border = '5px solid magenta';
         console.log(myGroup[i]);
     }      
  
 }
+
+function selectedIw(obj) {
+
+    obj.style.paddingTop = "10px";
+    obj.style.paddingBottom = "10px"; 
+    obj.style.backgroundColor = "#FFFFFF";   
+    obj.style.color = "lightblue"; 
+    obj.style.font = "bold"; 
+ 
+    var myGroup, i;
+    myGroup = document.querySelectorAll("div.intense-work");  
+
+    console.log(myGroup); 
+
+    for (i = 0; i < myGroup.length; i++) {  
+        myGroup[i].style.color = 'blue';
+        myGroup[i].style.backgroundColor = 'yellow';
+        myGroup[i].style.border = '5px solid magenta';
+        console.log(myGroup[i]);
+    }      
+ 
+}
+
+function selectedJt(obj) {
+
+    obj.style.paddingTop = "10px";
+    obj.style.paddingBottom = "10px"; 
+    obj.style.backgroundColor = "#FFFFFF";   
+    obj.style.color = "lightblue"; 
+    obj.style.font = "bold"; 
+ 
+    var myGroup, i;
+    myGroup = document.querySelectorAll("div.just-trying");  
+
+    console.log(myGroup); 
+
+    for (i = 0; i < myGroup.length; i++) {  
+        myGroup[i].style.color = 'blue';
+        myGroup[i].style.backgroundColor = 'yellow';
+        myGroup[i].style.border = '5px solid magenta';
+        console.log(myGroup[i]);
+    }      
+ 
+}
+
+function selectedFt(obj) {
+
+    obj.style.paddingTop = "10px";
+    obj.style.paddingBottom = "10px"; 
+    obj.style.backgroundColor = "#FFFFFF";   
+    obj.style.color = "lightblue"; 
+    obj.style.font = "bold"; 
+ 
+    var myGroup, i;
+    myGroup = document.querySelectorAll("div.fun-stuff");  
+
+    console.log(myGroup); 
+
+    for (i = 0; i < myGroup.length; i++) {  
+        myGroup[i].style.color = 'blue';
+        myGroup[i].style.backgroundColor = 'yellow';
+        myGroup[i].style.border = '5px solid magenta';
+        console.log(myGroup[i]);
+    }      
+ 
+}
+
