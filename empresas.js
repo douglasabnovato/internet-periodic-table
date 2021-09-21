@@ -201,3 +201,21 @@ function selectedDn(obj) {
  
 }
 
+
+let themeToggler = document.getElementById("theme-toggler");
+
+themeToggler.addEventListener("click", () => {
+
+  let targetTheme;
+  let currentTheme = document.documentElement.getAttribute("data-theme"); 
+
+  if (currentTheme === "dark") {
+    targetTheme = "light";
+  } else {
+    targetTheme = "dark";
+  }
+  console.log("cliquei")
+  document.documentElement.setAttribute("data-theme", targetTheme);
+
+});
+

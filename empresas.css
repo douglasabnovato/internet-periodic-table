@@ -1,29 +1,48 @@
   /* Temas */ 
   html[data-theme="dark"] { 
-    --dark-background: #202e38; 
-    --dark-titulo: #f1f5f6;
-    --dark-frase: #f1f5f6; 
+    --theme-background: #202e38; 
+    --theme-titulo: #f1f5f6;
+    --theme-frase: #f1f5f6; 
 
-    --dark-legend-text-light:#ccc;
-    --dark-legend-text-dark:#eee; 
+    --theme-legend-text-light:#ccc;
+    --theme-legend-text-dark:#eee; 
   
-    --dark-legend-direction-light:#ccc;
-    --dark-legend-direction-dark:#eee;
+    --theme-legend-direction-light:#ccc;
+    --theme-legend-direction-dark:#eee;
+
+    --toggle-border: #f1f5f6; 
+    --toggle-color: #f1f5f6;
+    --toggle-background-color: #202e38;  
+
   }
-  html[data-theme="light"] { 
-    --light-background: #f1f5f6;
-    --light-titulo: #202e38;
-    --light-frase: #202e38;
+  html[data-theme="light"] {   
+    --theme-background: #f1f5f6; 
+    --theme-titulo: #202e38;
+    --theme-frase: #202e38; 
 
-    --light-legend-text-light:#ccc;
-    --light-legend-text-dark:#eee; 
+    --theme-legend-text-light:#202e38;
+    --theme-legend-text-dark:#202e38; 
   
-    --light-legend-direction-light:#ccc;
-    --light-legend-direction-dark:#eee;
+    --theme-legend-direction-light:#202e38;
+    --theme-legend-direction-dark:#202e38;
+
+    --toggle-border: #202e38;
+    --toggle-color: #202e38;
+    --toggle-background-color: #f1f5f6;
   }
 
   /* Gradiente */
   :root {
+
+    --background: #202e38; 
+    --titulo: #f1f5f6;
+    --frase: #f1f5f6; 
+
+    --legend-text-light:#ccc;
+    --legend-text-dark:#eee; 
+  
+    --light-legend-direction-light:#ccc;
+    --light-legend-direction-dark:#eee;
 
     --social-media-light: #f3f9a6;
     --social-media-dark: #cbc634; 
@@ -45,27 +64,44 @@
   /* Gerais */
   
   body {
-    background: var(--dark-background);
+    background: var(--theme-background);
     font-family: "Poppins", sans-serif;
   }
   
   h1 {
     margin: 2em auto 0;
     font: 700 3em "Poppins", sans-serif;
-    color: var(--dark-titulo);
+    color: var(--theme-titulo);
     text-align: center;
   }
   
   h5 {
     margin: 0 auto 2em;
     font: 400 1.3em "Poppins", sans-serif;
-    color: var(--dark-frase);
+    color: var(--theme-frase);
     text-align: center;
   }
   
   a {
     text-decoration: none;
   } 
+
+  /* Botão Tema */
+
+  .toggler-container {
+    margin-bottom: 10px;
+    font-size: 50px;
+    height: 60px;
+    width: 60px;
+    border-color: var(--toggle-border);
+    border-radius: 10px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--toggle-background-color);
+    color: var(--toggle-color);
+  }
   
   /* Rodapé com os links das redes sociais */
   footer {
@@ -252,14 +288,14 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0 25px 5px 5px;
-    background: -webkit-linear-gradient(var(--dark-legend-text-light), var(--dark-legend-text-dark));
+    background: -webkit-linear-gradient(var(--theme-legend-text-light), var(--theme-legend-text-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .legend-table__direction {
     display: inline-block;
     margin: 10px 15px 10px 10px;
-    background: -webkit-linear-gradient(var(--dark-legend-direction-light), var(--dark-legend-direction-dark));
+    background: -webkit-linear-gradient(var(--theme-legend-direction-light), var(--theme-legend-direction-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

@@ -68,6 +68,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas está l
     - [x] b.  ProDoc319: Publicar essa aplicação em um servidor gratuito: [periodic table on netlify](https://musing-poitras-bf14e7.netlify.app/)
     - [x] c.  ProDoc320: Editar ícones e links de redes sociais 
     - [x] d.  ProDoc321: Não remover a prévia descrição quando passa o mouse sobre o elemento. Adicionar essa informação ao json. 
+    - [ ] e.  ProDoc322: Aperfeiçor a tarefa ProDoc220, adicionei a possibilidade de salvar a preferência do tema.
 
 #### Analisar itens de maior complexidade 
 
