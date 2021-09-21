@@ -87,7 +87,20 @@ function showEmpresas(jsonObj) {
 
 }
 
-function selectedLegend(obj) { 
-    obj.style.backgroundColor = "#FFFFFF"; 
-    
+function selectedLegend(obj) {
+
+    obj.style.paddingTop = "10px";
+    obj.style.paddingBottom = "10px"; 
+    obj.style.backgroundColor = "#FFFFFF";  
+    obj.style.color = "lightblue"; 
+    obj.style.font = "bold"; 
+
+ 
+    var myGroup, i;
+    myGroup = document.querySelectorAll("div.social-media"); 
+
+    for (i = 0; i < myGroup.length; i++) {  
+        console.log(myGroup[i]);
+    }      
+ 
 }
