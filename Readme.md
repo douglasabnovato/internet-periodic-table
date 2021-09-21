@@ -50,7 +50,7 @@ Lembre-se sempre, manter o aspecto de tabela periódica.
 - [ ] ProDoc217: O ideal é que seja criado também um botão (X) auxiliar que serve para fechar o modal. 
 - [ ] ProDoc218: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
 - [ ] ProDoc219: Opções de acessibilidade no teclado: trocar o foco com a tecla tab, acessar o modal com barra ou enter;
-- [ ] ProDoc220: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
+- [x] ProDoc220: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
 - [x] ProDoc221: A tabela deve ser dinâmica, caso um novo elemento de um grupo já existente seja adicionado ao JSON, deve adicionar a tabela;
 - [x] ProDoc222: Caso um novo elemento de um novo grupo seja criado ao JSON, atender ao item ProDoc117.
 
