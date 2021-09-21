@@ -1,21 +1,65 @@
+  /* Temas */ 
+  html[data-theme="dark"] { 
+    --dark-background: #202e38; 
+    --dark-titulo: #f1f5f6;
+    --dark-frase: #f1f5f6; 
+
+    --dark-legend-text-light:#ccc;
+    --dark-legend-text-dark:#eee; 
+  
+    --dark-legend-direction-light:#ccc;
+    --dark-legend-direction-dark:#eee;
+  }
+  html[data-theme="light"] { 
+    --light-background: #f1f5f6;
+    --light-titulo: #202e38;
+    --light-frase: #202e38;
+
+    --light-legend-text-light:#ccc;
+    --light-legend-text-dark:#eee; 
+  
+    --light-legend-direction-light:#ccc;
+    --light-legend-direction-dark:#eee;
+  }
+
+  /* Gradiente */
+  :root {
+
+    --social-media-light: #f3f9a6;
+    --social-media-dark: #cbc634; 
+
+    --fun-stuff-light:  #ff616d; 
+    --fun-stuff-dark: #ffc171;
+
+    --just-trying-light: #37cfdc;
+    --just-trying-dark: #5a88e5;
+
+    --intense-work-light:#a7df62;
+    --intense-work-dark: #58ac30; 
+
+    --douglas-novato-light:#DA70D6;
+    --douglas-novato-dark:#C71585;
+  
+  }
+  
   /* Gerais */
   
   body {
-    background: #202e38;
+    background: var(--dark-background);
     font-family: "Poppins", sans-serif;
   }
   
   h1 {
     margin: 2em auto 0;
     font: 700 3em "Poppins", sans-serif;
-    color: #f1f5f6;
+    color: var(--dark-titulo);
     text-align: center;
   }
   
   h5 {
     margin: 0 auto 2em;
     font: 400 1.3em "Poppins", sans-serif;
-    color: #f1f5f6;
+    color: var(--dark-frase);
     text-align: center;
   }
   
@@ -208,14 +252,14 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0 25px 5px 5px;
-    background: -webkit-linear-gradient(#ccc, #eee);
+    background: -webkit-linear-gradient(var(--dark-legend-text-light), var(--dark-legend-text-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .legend-table__direction {
     display: inline-block;
     margin: 10px 15px 10px 10px;
-    background: -webkit-linear-gradient(#ccc, #eee);
+    background: -webkit-linear-gradient(var(--dark-legend-direction-light), var(--dark-legend-direction-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
