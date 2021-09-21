@@ -107,7 +107,7 @@ function selectedSm(obj) {
     for (i = 0; i < myGroup.length; i++) {  
         myGroup[i].style.color = 'blue';
         myGroup[i].style.backgroundColor = 'yellow';
-        myGroup[i].style.border = '6px solid magenta';
+        myGroup[i].style.border = '6px solid red';
         console.log(myGroup[i]);
     }      
  
@@ -129,7 +129,7 @@ function selectedIw(obj) {
     for (i = 0; i < myGroup.length; i++) {  
         myGroup[i].style.color = 'blue';
         myGroup[i].style.backgroundColor = 'yellow';
-        myGroup[i].style.border = '6px solid magenta';
+        myGroup[i].style.border = '6px solid red';
         console.log(myGroup[i]);
     }      
  
@@ -151,7 +151,7 @@ function selectedJt(obj) {
     for (i = 0; i < myGroup.length; i++) {  
         myGroup[i].style.color = 'blue';
         myGroup[i].style.backgroundColor = 'yellow';
-        myGroup[i].style.border = '6px solid magenta';
+        myGroup[i].style.border = '6px solid red';
         console.log(myGroup[i]);
     }      
  
@@ -173,7 +173,7 @@ function selectedFt(obj) {
     for (i = 0; i < myGroup.length; i++) {  
         myGroup[i].style.color = 'blue';
         myGroup[i].style.backgroundColor = 'yellow';
-        myGroup[i].style.border = '6px solid magenta';
+        myGroup[i].style.border = '6px solid red';
         console.log(myGroup[i]);
     }      
  
@@ -195,7 +195,7 @@ function selectedDn(obj) {
     for (i = 0; i < myGroup.length; i++) {  
         myGroup[i].style.color = 'blue';
         myGroup[i].style.backgroundColor = 'yellow';
-        myGroup[i].style.border = '6px solid magenta';
+        myGroup[i].style.border = '6px solid red';
         console.log(myGroup[i]);
     }      
  
