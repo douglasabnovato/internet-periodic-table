@@ -14,6 +14,10 @@
     --toggle-color: #f1f5f6;
     --toggle-background-color: #202e38;  
 
+    --footer-background-hover: rgba(255, 255, 255, 0.1); 
+    --footer-border:#fff; 
+    --footer-color:#fff; 
+
   }
   html[data-theme="light"] {   
     --theme-background: #f1f5f6; 
@@ -29,6 +33,10 @@
     --toggle-border: #202e38;
     --toggle-color: #202e38;
     --toggle-background-color: #f1f5f6;
+
+    --footer-background-hover: #fff;
+    --footer-border: #202e38;
+    --footer-color: #202e38;
   }
 
   /* Gradiente */
@@ -116,12 +124,12 @@
     height: 45px;
     border-radius: 50%;
     background: transparent;
-    border: 1px dashed #fff;
-    color: #fff;
+    border: 1px dashed var(--footer-border);
+    color: var(--footer-color);
     margin: 5px;
   }
   footer a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--footer-background-hover);
   }
   footer a .icons {
     margin-top: 12px;
