@@ -10,11 +10,17 @@ request.send();
 
 request.onload = function() {
     var empresas = request.response;
+    savedTheme();
     populateHeader(empresas);
-    showEmpresas(empresas);
+    showEmpresas(empresas); 
 }
 
-
+function savedTheme(){
+    let savedTheme = localStorage.getItem("theme"); 
+    if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+    }
+}
 
 function populateHeader(jsonObj) {
     var myH1 = document.createElement('h1');
@@ -86,10 +92,12 @@ function showEmpresas(jsonObj) {
     }  
 
 }  
+ 
 
 let themeToggler = document.getElementById("theme-toggler");
 
 themeToggler.addEventListener("click", () => {
+ 
 
   let targetTheme;
   let currentTheme = document.documentElement.getAttribute("data-theme"); 
@@ -99,6 +107,7 @@ themeToggler.addEventListener("click", () => {
   } else {
     targetTheme = "dark";
   } 
+  localStorage.setItem("theme", targetTheme);
   document.documentElement.setAttribute("data-theme", targetTheme);
 
 });
