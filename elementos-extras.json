@@ -208,8 +208,15 @@
     ]
 }
 
-//Inserir na linha 43 do index.html
+
 <a id="douglasnovato" href="#" onclick="selectedDn(this)">
     <span class="legend-table__marker douglas-novato"></span>
     <span class="legend-table__text">Douglas Novato</span>
 </a>
+
+//Inserir na linha 60 do empresas.js
+else if(apps[i].Grupo == "Douglas Novato"){
+    var myElement = document.createElement('div');
+    myElement.className = 'periodic-element douglas-novato';  
+    myElement.setAttribute("dataDescription", apps[i].Explicacao); 
+}

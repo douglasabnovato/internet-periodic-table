@@ -56,10 +56,6 @@ function showEmpresas(jsonObj) {
             var myElement = document.createElement('div');
             myElement.className = 'empty-spacer-2';  
             myElement.setAttribute("dataDescription", apps[i].Explicacao); 
-        }else if(apps[i].Grupo == "Douglas Novato"){
-            var myElement = document.createElement('div');
-            myElement.className = 'periodic-element douglas-novato';  
-            myElement.setAttribute("dataDescription", apps[i].Explicacao); 
         }
  
  
@@ -89,83 +85,7 @@ function showEmpresas(jsonObj) {
 
     }  
 
-}
-
-function selectedSm() {
-
-    var myGroup, i;
-    myGroup = document.querySelectorAll("div.social-media");  
-
-    for (i = 0; i < myGroup.length; i++) {   
-        myGroup[i].style.border = '6px solid red'; 
-    }      
- 
-}
-
-function selectedIw() {
-
-    var myGroup, i;
-    myGroup = document.querySelectorAll("div.intense-work");  
-
-    console.log(myGroup); 
-
-    for (i = 0; i < myGroup.length; i++) {  
-        myGroup[i].style.color = 'blue';
-        myGroup[i].style.backgroundColor = 'yellow';
-        myGroup[i].style.border = '6px solid red';
-        console.log(myGroup[i]);
-    }      
- 
-}
-
-function selectedJt() {
-
-    var myGroup, i;
-    myGroup = document.querySelectorAll("div.just-trying");  
-
-    console.log(myGroup); 
-
-    for (i = 0; i < myGroup.length; i++) {  
-        myGroup[i].style.color = 'blue';
-        myGroup[i].style.backgroundColor = 'yellow';
-        myGroup[i].style.border = '6px solid red';
-        console.log(myGroup[i]);
-    }      
- 
-}
-
-function selectedFt() {
-
-    var myGroup, i;
-    myGroup = document.querySelectorAll("div.fun-stuff");  
-
-    console.log(myGroup); 
-
-    for (i = 0; i < myGroup.length; i++) {  
-        myGroup[i].style.color = 'blue';
-        myGroup[i].style.backgroundColor = 'yellow';
-        myGroup[i].style.border = '6px solid red';
-        console.log(myGroup[i]);
-    }      
- 
-}
-
-function selectedDn() { 
-
-    var myGroup, i;
-    myGroup = document.querySelectorAll("div.douglas-novato");  
-
-    console.log(myGroup); 
-
-    for (i = 0; i < myGroup.length; i++) {  
-        myGroup[i].style.color = 'blue';
-        myGroup[i].style.backgroundColor = 'yellow';
-        myGroup[i].style.border = '6px solid red';
-        console.log(myGroup[i]);
-    }      
- 
-}
-
+}  
 
 let themeToggler = document.getElementById("theme-toggler");
 
@@ -178,9 +98,76 @@ themeToggler.addEventListener("click", () => {
     targetTheme = "light";
   } else {
     targetTheme = "dark";
-  }
-  console.log("cliquei")
+  } 
   document.documentElement.setAttribute("data-theme", targetTheme);
 
 });
+ 
 
+let socialMedia = document.getElementById("social-media-check");
+
+socialMedia.addEventListener("click", () => {
+
+    let targetLegend;
+    let currentLegend = document.documentElement.getAttribute("data-legend"); 
+
+    if (currentLegend === "toCheck") {
+        targetLegend = "checked";
+    } else {
+        targetLegend = "toCheck";
+    } 
+
+    document.documentElement.setAttribute("data-legend", targetLegend);
+
+})
+
+let intenseWork = document.getElementById("intense-work-check");
+
+intenseWork.addEventListener("click", () => {
+
+    let targetLegend;
+    let currentLegend = document.documentElement.getAttribute("data-legend"); 
+
+    if (currentLegend === "toCheck") {
+        targetLegend = "checked";
+    } else {
+        targetLegend = "toCheck";
+    } 
+
+    document.documentElement.setAttribute("data-legend", targetLegend);
+
+})
+
+let justTrying = document.getElementById("just-trying-check");
+
+justTrying.addEventListener("click", () => {
+
+    let targetLegend;
+    let currentLegend = document.documentElement.getAttribute("data-legend"); 
+
+    if (currentLegend === "toCheck") {
+        targetLegend = "checked";
+    } else {
+        targetLegend = "toCheck";
+    } 
+
+    document.documentElement.setAttribute("data-legend", targetLegend);
+
+})
+    
+let funStuff = document.getElementById("fun-stuff-check");
+
+funStuff.addEventListener("click", () => {
+
+    let targetLegend;
+    let currentLegend = document.documentElement.getAttribute("data-legend"); 
+
+    if (currentLegend === "toCheck") {
+        targetLegend = "checked";
+    } else {
+        targetLegend = "toCheck";
+    } 
+
+    document.documentElement.setAttribute("data-legend", targetLegend);
+
+})
