@@ -68,8 +68,9 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas está l
     - [x] a.  ProDoc318: Adicionar elementos extras na tabela. Lembrando de validar o item ProDoc221. 
     - [x] b.  ProDoc319: Publicar essa aplicação em um servidor gratuito: [periodic table on netlify](https://musing-poitras-bf14e7.netlify.app/)
     - [x] c.  ProDoc320: Editar ícones e links de redes sociais 
-    - [x] d.  ProDoc321: Não remover a prévia descrição quando passa o mouse sobre o elemento. Adicionar essa informação ao json. 
-    - [x] e.  ProDoc322: Salvar a preferência do tema.
+    - [x] d.  ProDoc321: Não remover a prévia descrição quando passa o mouse sobre o elemento. 
+    - [x] e.  ProDoc322: Adicionar essa informação ao json. 
+    - [x] f.  ProDoc323: Salvar a preferência do tema.
 
 #### Analisar itens de maior complexidade 
 
