@@ -18,6 +18,8 @@
     --footer-border:#fff; 
     --footer-color:#fff; 
 
+    --periodic-element-inner-background: #202e38;
+
   }
   html[data-theme="light"] {   
     --theme-background: #f1f5f6; 
@@ -37,6 +39,8 @@
     --footer-background-hover: #fff;
     --footer-border: #202e38;
     --footer-color: #202e38;
+
+    --periodic-element-inner-background: #f1f5f6;
   }
 
   /* Gradiente */
@@ -157,7 +161,7 @@
   }
   /* Div Interna ( inner ) do Elemento da Tabela */
   .periodic-element .periodic-element-inner {
-    background: #202e38;
+    background: var(--periodic-element-inner-background);
     padding: 10px 15px;
     width: calc(100% - 30px);
     height: calc(100% - 20px);
