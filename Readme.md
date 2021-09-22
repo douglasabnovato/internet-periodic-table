@@ -36,7 +36,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [x] ProDoc115: Criar a tabela periódica baseada nos dados do JSON fornecido;
 - [x] ProDoc116: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele;
-- [ ] ProDoc117: Adicionar um efeito de marcar/desmarcar para destacar os itens deste agrupamento ao clicar no item da legenda;
+- [x] ProDoc117: Adicionar um efeito de marcar/desmarcar para destacar os itens deste agrupamento ao clicar no item da legenda;
 - [ ] ProDoc118: Fazer o responsivo sem desmembrar os itens do aspecto de tabela periódica.
 - [ ] ProDoc119: Os itens devem ficar flexíveis para caber em 1024px da tela, sem distorção. 
 - [ ] ProDoc120: Abaixo desta resolução, criar uma barra de rolagem ou algo criativo, para ser utilizado em dispositivos móveis. 

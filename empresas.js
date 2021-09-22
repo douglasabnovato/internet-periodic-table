@@ -118,7 +118,7 @@ let socialMedia = document.getElementById("social-media-check");
 socialMedia.addEventListener("click", () => {
 
     let targetLegend;
-    let currentLegend = document.documentElement.getAttribute("data-legend"); 
+    let currentLegend = document.documentElement.getAttribute("data-social-media"); 
 
     if (currentLegend === "toCheck") {
         targetLegend = "checked";
@@ -126,7 +126,7 @@ socialMedia.addEventListener("click", () => {
         targetLegend = "toCheck";
     } 
 
-    document.documentElement.setAttribute("data-legend", targetLegend);
+    document.documentElement.setAttribute("data-social-media", targetLegend);
 
 })
 
@@ -135,7 +135,7 @@ let intenseWork = document.getElementById("intense-work-check");
 intenseWork.addEventListener("click", () => {
 
     let targetLegend;
-    let currentLegend = document.documentElement.getAttribute("data-legend"); 
+    let currentLegend = document.documentElement.getAttribute("data-intense-work"); 
 
     if (currentLegend === "toCheck") {
         targetLegend = "checked";
@@ -143,7 +143,7 @@ intenseWork.addEventListener("click", () => {
         targetLegend = "toCheck";
     } 
 
-    document.documentElement.setAttribute("data-legend", targetLegend);
+    document.documentElement.setAttribute("data-intense-work", targetLegend);
 
 })
 
@@ -152,7 +152,7 @@ let justTrying = document.getElementById("just-trying-check");
 justTrying.addEventListener("click", () => {
 
     let targetLegend;
-    let currentLegend = document.documentElement.getAttribute("data-legend"); 
+    let currentLegend = document.documentElement.getAttribute("data-just-trying"); 
 
     if (currentLegend === "toCheck") {
         targetLegend = "checked";
@@ -160,7 +160,7 @@ justTrying.addEventListener("click", () => {
         targetLegend = "toCheck";
     } 
 
-    document.documentElement.setAttribute("data-legend", targetLegend);
+    document.documentElement.setAttribute("data-just-trying", targetLegend);
 
 })
     
@@ -169,7 +169,7 @@ let funStuff = document.getElementById("fun-stuff-check");
 funStuff.addEventListener("click", () => {
 
     let targetLegend;
-    let currentLegend = document.documentElement.getAttribute("data-legend"); 
+    let currentLegend = document.documentElement.getAttribute("data-fun-stuff"); 
 
     if (currentLegend === "toCheck") {
         targetLegend = "checked";
@@ -177,6 +177,6 @@ funStuff.addEventListener("click", () => {
         targetLegend = "toCheck";
     } 
 
-    document.documentElement.setAttribute("data-legend", targetLegend);
+    document.documentElement.setAttribute("data-fun-stuff", targetLegend);
 
 })

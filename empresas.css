@@ -73,17 +73,52 @@
   
   }
 
-  /* Seleção de Legenda */ 
-  html[data-legend="toCheck"] {
-    --legend-element-border-style: solid; 
-    --legend-element-border-width: 0px;
-    --legend-element-border-color: black;
+  /* Seleção de Legenda social-media */ 
+  html[data-social-media="toCheck"] {
+    --legend-social-media-border-style: solid; 
+    --legend-social-media-border-width: 0px;
+    --legend-social-media-border-color: black;
 
   }  
-  html[data-legend="checked"] { 
-    --legend-element-border-style: solid; 
-    --legend-element-border-width: 6px;
-    --legend-element-border-color: red;
+  html[data-social-media="checked"] { 
+    --legend-social-media-border-style: solid; 
+    --legend-social-media-border-width: 6px;
+    --legend-social-media-border-color: red;
+  }  
+  /* Seleção de Legenda intense-work */
+  html[data-intense-work="toCheck"] {
+    --legend-intense-work-border-style: solid; 
+    --legend-intense-work-border-width: 0px;
+    --legend-intense-work-border-color: black;
+
+  }  
+  html[data-intense-work="checked"] { 
+    --legend-intense-work-border-style: solid; 
+    --legend-intense-work-border-width: 6px;
+    --legend-intense-work-border-color: red;
+  } /* Seleção de Legenda just-trying */ 
+  html[data-just-trying="toCheck"] {
+    --legend-just-trying-border-style: solid; 
+    --legend-just-trying-border-width: 0px;
+    --legend-just-trying-border-color: black;
+
+  }  
+  html[data-just-trying="checked"] { 
+    --legend-just-trying-border-style: solid; 
+    --legend-just-trying-border-width: 6px;
+    --legend-just-trying-border-color: red;
+  }  
+  /* Seleção de Legenda fun-stuff */
+  html[data-fun-stuff="toCheck"] {
+    --legend-fun-stuff-border-style: solid; 
+    --legend-fun-stuff-border-width: 0px;
+    --legend-fun-stuff-border-color: black;
+
+  }  
+  html[data-fun-stuff="checked"] { 
+    --legend-fun-stuff-border-style: solid; 
+    --legend-fun-stuff-border-width: 6px;
+    --legend-fun-stuff-border-color: red;
   } 
   
   /* Gerais */
@@ -234,10 +269,9 @@
     background: linear-gradient(to bottom right, #f3f9a6 0%, #cbc634 100%);     
   }
   div.social-media{ 
-    border-width: var(--legend-element-border-width);
-    border-style: var(--legend-element-border-style);
-    border-color: var(--legend-element-border-color); 
-    
+    border-width: var(--legend-social-media-border-width);
+    border-style: var(--legend-social-media-border-style);
+    border-color: var(--legend-social-media-border-color);  
   }
   .social-media .title,
   .social-media .description {
@@ -250,6 +284,11 @@
   .fun-stuff {
     background: linear-gradient(to bottom right, #ff616d 0%, #ffc171 100%);
   }
+  div.fun-stuff{ 
+    border-width: var(--legend-fun-stuff-border-width);
+    border-style: var(--legend-fun-stuff-border-style);
+    border-color: var(--legend-fun-stuff-border-color); 
+  }
   .fun-stuff .title,
   .fun-stuff .description {
     background: -webkit-linear-gradient(#ff616d, #ffc171);
@@ -261,6 +300,11 @@
   .just-trying {
     background: linear-gradient(to bottom right, #37cfdc 0%, #5a88e5 100%);
   }
+  div.just-trying{ 
+    border-width: var(--legend-just-trying-border-width);
+    border-style: var(--legend-just-trying-border-style);
+    border-color: var(--legend-just-trying-border-color); 
+  }
   .just-trying .title,
   .just-trying .description {
     background: -webkit-linear-gradient(#37cfdc, #5a88e5);
@@ -271,6 +315,11 @@
   /* Estilização do Grupo: intense-work (Serious Work) */
   .intense-work {
     background: linear-gradient(to bottom right, #58ac30 0%, #a7df62 100%);
+  }
+  div.intense-work{ 
+    border-width: var(--legend-intense-work-border-width);
+    border-style: var(--legend-intense-work-border-style);
+    border-color: var(--legend-intense-work-border-color); 
   }
   .intense-work .title,
   .intense-work .description {
