@@ -47,7 +47,7 @@ Lembre-se sempre, manter o aspecto de tabela periódica.
 
 - [ ] ProDoc215: Ao clicar sobre um elemento, abrir um modal que apresente a informação da propriedade "Descrição" do JSON . 
 - [ ] ProDoc216: O modal deve fechar ao clicar fora da área de conteúdo. 
-- [ ] ProDoc217: O ideal é que seja criado também um botão (X) auxiliar que serve para fechar o modal. 
+- [x] ProDoc217: O ideal é que seja criado também um botão (X) auxiliar que serve para fechar o modal. 
 - [ ] ProDoc218: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
 - [ ] ProDoc219: Opções de acessibilidade no teclado: trocar o foco com a tecla tab, acessar o modal com barra ou enter;
 - [x] ProDoc220: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
