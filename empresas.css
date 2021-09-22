@@ -312,6 +312,55 @@
     -webkit-text-fill-color: transparent;
   }
 
+  /* Estilização da Seleção de Legenda */
+  .legend-checked{
+    display: inline-block;
+  }  
+
+  #social-media,
+  #intense-work,
+  #just-trying,
+  #fun-stuff
+  {
+    display: none; 
+  }
+
+  #social-media:checked + .legend-checked{
+    background: white;
+    border-radius:4px;
+    margin-bottom:20px;
+    padding:2px;
+    box-shadow: 0 2px 6px rgba(50,50,90,.1);
+    color: #202e38;
+  }
+
+  #intense-work:checked + .legend-checked{
+    background: white;
+    border-radius:4px;
+    margin-bottom:20px;
+    padding:2px;
+    box-shadow: 0 2px 6px rgba(50,50,90,.1);
+    color: #202e38;
+  }
+
+  #just-trying:checked + .legend-checked{
+    background: white;
+    border-radius:4px;
+    margin-bottom:20px;
+    padding:2px;
+    box-shadow: 0 2px 6px rgba(50,50,90,.1);
+    color: #202e38;
+  }
+
+  #fun-stuff:checked + .legend-checked{
+    background: white;
+    border-radius:4px;
+    margin-bottom:20px;
+    padding:2px;
+    box-shadow: 0 2px 6px rgba(50,50,90,.1);
+    color: #202e38;
+  }
+
   /* Estilização do Modal */
   .modal-window {
     position: fixed;

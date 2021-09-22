@@ -95,18 +95,14 @@ function selectedSm(obj) {
 
     obj.style.paddingTop = "10px";
     obj.style.paddingBottom = "10px"; 
-    obj.style.backgroundColor = "#FFFFFF";   
-    obj.style.color = "lightblue"; 
-    obj.style.font = "bold"; 
+    obj.style.backgroundColor = "#FFFFFF";  
  
     var myGroup, i;
     myGroup = document.querySelectorAll("div.social-media");  
 
     console.log(myGroup); 
 
-    for (i = 0; i < myGroup.length; i++) {  
-        myGroup[i].style.color = 'blue';
-        myGroup[i].style.backgroundColor = 'yellow';
+    for (i = 0; i < myGroup.length; i++) {   
         myGroup[i].style.border = '6px solid red';
         console.log(myGroup[i]);
     }      

@@ -33,23 +33,37 @@
 
             <div class="legend-table__wrapper">  
                 
-                <a id="socialmedia" href="#" onclick="selectedSm(this)">
-                    <span class="legend-table__marker social-media"></span>
-                    <span class="legend-table__text">Social Media</span> 
-                </a>
-                <a id="intensework" href="#" onclick="selectedIw(this)">
-                    <span class="legend-table__marker intense-work"></span>
-                    <span class="legend-table__text">Serious Work</span>
-                </a>
-                <a id="justtrying" href="#" onclick="selectedJt(this)">
-                    <span class="legend-table__marker just-trying"></span>
-                    <span class="legend-table__text">Personal Development</span>
-                </a>
-                <a id="funstuff" href="#" onclick="selectedFt(this)">
-                    <span class="legend-table__marker fun-stuff"></span>
-                    <span class="legend-table__text">Fun Stuff</span>
-                </a> 
-                
+                    <input type="checkbox" id="social-media">
+                    <div class="legend-checked" >
+                        <label for="social-media"> 
+                            <span class="legend-table__marker social-media"></span>
+                            <span class="legend-table__text">Social Media</span>
+                        </label>
+                    </div> 
+                    
+                    <input type="checkbox" id="intense-work"> 
+                    <div class="legend-checked" >
+                        <label for="intense-work"> 
+                            <span class="legend-table__marker intense-work"></span>
+                            <span class="legend-table__text">Serious Work</span>
+                        </label>
+                    </div> 
+                    
+                    <input type="checkbox" id="just-trying"> 
+                    <div class="legend-checked" >
+                        <label for="just-trying"> 
+                            <span class="legend-table__marker just-trying"></span>
+                            <span class="legend-table__text">Personal Development</span>
+                        </label>
+                    </div> 
+
+                    <input type="checkbox" id="fun-stuff"> 
+                    <div class="legend-checked" >
+                        <label for="fun-stuff"> 
+                            <span class="legend-table__marker fun-stuff"></span>
+                            <span class="legend-table__text">Fun Stuff</span>
+                        </label>
+                    </div> 
                 <br /> 
 
                 <div class="legend-table__direction">
@@ -60,6 +74,7 @@
                 </div> 
 
             </div> 
+
         </div> 
 
         <div id="open-modal" class="modal-window"> 
