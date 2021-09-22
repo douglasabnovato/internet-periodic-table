@@ -91,32 +91,19 @@ function showEmpresas(jsonObj) {
 
 }
 
-function selectedSm(obj) {
+function selectedSm() {
 
-    obj.style.paddingTop = "10px";
-    obj.style.paddingBottom = "10px"; 
-    obj.style.backgroundColor = "#FFFFFF";  
- 
     var myGroup, i;
     myGroup = document.querySelectorAll("div.social-media");  
 
-    console.log(myGroup); 
-
     for (i = 0; i < myGroup.length; i++) {   
-        myGroup[i].style.border = '6px solid red';
-        console.log(myGroup[i]);
+        myGroup[i].style.border = '6px solid red'; 
     }      
  
 }
 
-function selectedIw(obj) {
+function selectedIw() {
 
-    obj.style.paddingTop = "10px";
-    obj.style.paddingBottom = "10px"; 
-    obj.style.backgroundColor = "#FFFFFF";   
-    obj.style.color = "lightblue"; 
-    obj.style.font = "bold"; 
- 
     var myGroup, i;
     myGroup = document.querySelectorAll("div.intense-work");  
 
@@ -131,14 +118,8 @@ function selectedIw(obj) {
  
 }
 
-function selectedJt(obj) {
+function selectedJt() {
 
-    obj.style.paddingTop = "10px";
-    obj.style.paddingBottom = "10px"; 
-    obj.style.backgroundColor = "#FFFFFF";   
-    obj.style.color = "lightblue"; 
-    obj.style.font = "bold"; 
- 
     var myGroup, i;
     myGroup = document.querySelectorAll("div.just-trying");  
 
@@ -153,14 +134,8 @@ function selectedJt(obj) {
  
 }
 
-function selectedFt(obj) {
+function selectedFt() {
 
-    obj.style.paddingTop = "10px";
-    obj.style.paddingBottom = "10px"; 
-    obj.style.backgroundColor = "#FFFFFF";   
-    obj.style.color = "lightblue"; 
-    obj.style.font = "bold"; 
- 
     var myGroup, i;
     myGroup = document.querySelectorAll("div.fun-stuff");  
 
@@ -175,14 +150,8 @@ function selectedFt(obj) {
  
 }
 
-function selectedDn(obj) {
+function selectedDn() { 
 
-    obj.style.paddingTop = "10px";
-    obj.style.paddingBottom = "10px"; 
-    obj.style.backgroundColor = "#FFFFFF";   
-    obj.style.color = "lightblue"; 
-    obj.style.font = "bold"; 
- 
     var myGroup, i;
     myGroup = document.querySelectorAll("div.douglas-novato");  
 
