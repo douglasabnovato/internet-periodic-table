@@ -45,14 +45,15 @@ Lembre-se sempre, manter o aspecto de tabela periódica.
 
 ### Desafíos Extras:
 
-- [ ] ProDoc215: Ao clicar sobre um elemento, abrir um modal que apresente a informação da propriedade "Descrição" do JSON . 
-- [ ] ProDoc216: O modal deve fechar ao clicar fora da área de conteúdo. 
-- [x] ProDoc217: O ideal é que seja criado também um botão (X) auxiliar que serve para fechar o modal. 
-- [ ] ProDoc218: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
-- [ ] ProDoc219: Opções de acessibilidade no teclado: trocar o foco com a tecla tab, acessar o modal com barra ou enter;
-- [x] ProDoc220: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
-- [x] ProDoc221: A tabela deve ser dinâmica, caso um novo elemento de um grupo já existente seja adicionado ao JSON, deve adicionar a tabela;
-- [x] ProDoc222: Caso um novo elemento de um novo grupo seja criado ao JSON, atender ao item ProDoc117.
+- [x] ProDoc215: Ao clicar sobre um elemento, abrir um modal. 
+- [ ] ProDoc216: Esse modal deve apresentar a informação da propriedade "Descrição" do JSON . 
+- [ ] ProDoc217: O modal deve fechar ao clicar fora da área de conteúdo. 
+- [x] ProDoc218: O ideal é que seja criado também um botão (X) auxiliar que serve para fechar o modal. 
+- [ ] ProDoc219: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
+- [ ] ProDoc220: Opções de acessibilidade no teclado: trocar o foco com a tecla tab, acessar o modal com barra ou enter;
+- [x] ProDoc221: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
+- [x] ProDoc222: A tabela deve ser dinâmica, caso um novo elemento de um grupo já existente seja adicionado ao JSON, deve adicionar a tabela;
+- [x] ProDoc223: Caso um novo elemento de um novo grupo seja criado ao JSON, atender ao item ProDoc117.
 
 Esse roteiro é apenas um norte de opções para realizar o desafio, mas está livre para fazer outras criações. Não se limite em termos de criatividade. 
 
