@@ -220,3 +220,36 @@ else if(apps[i].Grupo == "Douglas Novato"){
     myElement.className = 'periodic-element douglas-novato';  
     myElement.setAttribute("dataDescription", apps[i].Explicacao); 
 }
+
+//Inserir na linha 73 do empresas.js 
+    var myWindow = document.createElement('div');
+    myWindow.className = 'modal-window';
+    myWindow.id = 'open-modal';
+
+        var myCard = document.createElement('div');
+        myCard.className = 'modalCard';
+
+            var myClose = document.createElement('a');
+            myClose.className = 'modal-close';
+            myClose.href = '#';
+            myClose.title = 'Close';
+            myClose.textContent = 'X';
+
+            var myMNome = document.createElement('div');
+            myMNome.className = 'modalNome';
+            myMNome.textContent = apps[i].Nome;   
+            console.log(apps[i].Nome)
+                
+        myCard.appendChild(myClose); 
+        myCard.appendChild(myMNome);
+
+            
+    myWindow.appendChild(myCard);
+        
+    sectionModal.appendChild(myWindow);  
+
+   //Inserir na linha 86 do index.html   
+
+    <div class="periodic-modal" >
+                
+    </div>

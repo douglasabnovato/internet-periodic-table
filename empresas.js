@@ -1,5 +1,6 @@
 const header = document.querySelector('header');
-const section = document.querySelector('div.periodic-table');
+const section = document.querySelector('div.periodic-table'); 
+const sectionModal = document.querySelector('div.periodic-modal');
 
 var requestURL = 'empresas.json';
 var request = new XMLHttpRequest();
@@ -23,6 +24,7 @@ function savedTheme(){
 }
 
 function populateHeader(jsonObj) {
+
     var myH1 = document.createElement('h1');
     myH1.textContent = jsonObj['tituloProjeto'];
 
@@ -38,6 +40,7 @@ function showEmpresas(jsonObj) {
     var apps = jsonObj['Empresas'];
   
     for (var i = 0; i < apps.length; i++) {  
+
         if(apps[i].Grupo == "Social Media"){
             var myElement = document.createElement('div');
             myElement.className = 'periodic-element social-media';
@@ -63,7 +66,6 @@ function showEmpresas(jsonObj) {
             myElement.className = 'empty-spacer-2';  
             myElement.setAttribute("dataDescription", apps[i].Explicacao); 
         }
- 
  
             var myAction = document.createElement('a'); 
             myAction.href = "#open-modal"; 
