@@ -37,20 +37,20 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [x] ProDoc115: Criar a tabela periódica baseada nos dados do JSON fornecido;
 - [x] ProDoc116: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele;
 - [x] ProDoc117: Adicionar um efeito de marcar/desmarcar para destacar os itens deste agrupamento ao clicar no item da legenda;
-- [ ] ProDoc118: Fazer o responsivo sem desmembrar os itens do aspecto de tabela periódica.
-- [ ] ProDoc119: Os itens devem ficar flexíveis para caber em 1024px da tela, sem distorção. 
-- [ ] ProDoc120: Abaixo desta resolução, criar uma barra de rolagem ou algo criativo, para ser utilizado em dispositivos móveis. 
+- [x] ProDoc118: Fazer o responsivo sem desmembrar os itens do aspecto de tabela periódica.
+- [x] ProDoc119: Os itens devem ficar flexíveis para caber em 1024px da tela, sem distorção. 
+- [x] ProDoc120: Abaixo desta resolução, criar uma barra de rolagem ou algo criativo, para ser utilizado em dispositivos móveis. 
 
 Lembre-se sempre, manter o aspecto de tabela periódica.
 
 ### Desafíos Extras:
 
 - [x] ProDoc215: Ao clicar sobre um elemento, abrir um modal. 
-- [ ] ProDoc216: Esse modal deve apresentar a informação da propriedade "Descrição" do JSON . 
-- [ ] ProDoc217: O modal deve fechar ao clicar fora da área de conteúdo. 
+- [x] ProDoc216: Esse modal deve apresentar a informação da propriedade "Descrição" do JSON . 
+- [x] ProDoc217: O modal deve fechar ao clicar fora da área de conteúdo. 
 - [x] ProDoc218: O ideal é que seja criado também um botão (X) auxiliar que serve para fechar o modal. 
-- [ ] ProDoc219: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
-- [ ] ProDoc220: Opções de acessibilidade no teclado: trocar o foco com a tecla tab, acessar o modal com barra ou enter;
+- [x] ProDoc219: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
+- [x] ProDoc220: Opções de acessibilidade no teclado: trocar o foco com a tecla tab, acessar o modal com barra ou enter;
 - [x] ProDoc221: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
 - [x] ProDoc222: A tabela deve ser dinâmica, caso um novo elemento de um grupo já existente seja adicionado ao JSON, deve adicionar a tabela;
 - [x] ProDoc223: Caso um novo elemento de um novo grupo seja criado ao JSON, atender ao item ProDoc117.
