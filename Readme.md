@@ -3,7 +3,7 @@
 </h4> 
 
 <h1 align="center">
-    <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-1.jpg" />
+    <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-0.jpg" />
 </h1>
 
 ## 🚀 Descrição do Desafio
@@ -83,6 +83,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas está l
 ## 🛠 Versão Final
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-0.jpg" width="400px">
   <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-1.jpg" width="400px">
   <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-4.jpg" width="400px"> 
   <img alt="periodictable" title="#PeriodicTable" src="/assets/tela-2.jpg" width="400px">
