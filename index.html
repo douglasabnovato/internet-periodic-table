@@ -1,88 +1,46 @@
 <!DOCTYPE html>
 <html> 
-    <html 
-        lang="en" 
-        data-theme="dark" 
-        data-social-media="toCheck" 
-        data-intense-work="toCheck" 
-        data-just-trying="toCheck" 
-        data-fun-stuff="toCheck"
-    >
-        <meta charset="UTF-8">
+    <html lang="en"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Projeto Teste para Vaga">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Douglas A. B. Novato">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">  
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">  
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css" /> 
-        <link rel="stylesheet" href="empresas.css"> 
-        <title>Tabela Periódica da Internet </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap">
+        <link rel="stylesheet" href="styles/style.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"  type="text/css" > 
+        <script src="scripts/main.js" defer></script> 
+        <title>My Internet Periodic Table</title> 
     </head>
-    <body>     
-        <header> 
-            <div class="toggler-container">
-                <div id="theme-toggler">
-                    <span class="mdi mdi-theme-light-dark"></span>
+    <body>
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <div class="modal-title"></div>
+                        <div class="modal-group"></div>
+                    </div>
+                    <button class="modal-close">×</button>
                 </div>
-            </div> 
-        </header> 
-        <div class="periodic-table" ></div> 
-        <div class="legend-table">  
-            <div class="legend-table__wrapper">   
-                    <input type="checkbox" id="social-media">
-                    <div class="legend-checked" id="social-media-check" >
-                        <label for="social-media"> 
-                            <span class="legend-table__marker social-media"></span>
-                            <span class="legend-table__text">Social Media</span>
-                        </label>
-                    </div>   
-                    <input type="checkbox" id="intense-work"> 
-                    <div class="legend-checked" id="intense-work-check" >
-                        <label for="intense-work"> 
-                            <span class="legend-table__marker intense-work"></span>
-                            <span class="legend-table__text">Serious Work</span>
-                        </label>
-                    </div>  
-                    <input type="checkbox" id="just-trying"> 
-                    <div class="legend-checked" id="just-trying-check" >
-                        <label for="just-trying"> 
-                            <span class="legend-table__marker just-trying"></span>
-                            <span class="legend-table__text">Personal Development</span>
-                        </label>
-                    </div>  
-                    <input type="checkbox" id="fun-stuff"> 
-                    <div class="legend-checked" id="fun-stuff-check" >
-                        <label for="fun-stuff"> 
-                            <span class="legend-table__marker fun-stuff"></span>
-                            <span class="legend-table__text">Fun Stuff</span>
-                        </label>
-                    </div> 
-                <br />  
-                <div class="legend-table__direction">
-                    <span>&#8594; &ensp; Across the table: Importance</span>
-                </div> 
-                <div class="legend-table__direction">
-                    <span>&#8595; &ensp; Down the table: Time Spent</span>
-                </div>  
-            </div>  
-        </div> 
-        <div id="open-modal" class="modal-window"> 
-            <div class="modalCard">
-                <a href="#" title="Close" class="modal-close">X</a> 
-                <div class="modalNome">
-                     <h2>Nome da Aplicação</h2> 
-                </div> 
-                <div class="modalDescricao">
-                    Descrição da Aplicação
-                </div>
-                <div class="modalLink">
-                    <a href="https://github.com/douglasabnovato" target="_blank">
-                        👉 <small>Link da Aplicação</small>
-                    </a>
-                </div>  
-            </div> 
-        </div>  
+                <div class="modal-description"></div>
+            </div>
+        </div>
+    
+        <header>
+            <h1>My Internet Periodic Table</h1>
+            <h5>How I waste my time on the Internet</h5>
+        </header>
+    
+        <div id="table">
+            <div id="table-inner"></div>
+        </div>
+    
+        <div id="legend">
+            <div id="legend-inner"></div>
+        </div>
+
         <footer>
             <a href="https://www.linkedin.com/in/douglasabnovato" target="_blank">
                 <i class="icon-social-linkedin icons"></i>
@@ -97,6 +55,5 @@
                 <i class="icon-social-dribbble icons"></i>
             </a>
         </footer>  
-    </body>  
-    <script type="text/javascript" src="empresas.js"></script>
+    </body>
 </html>

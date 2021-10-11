@@ -1,65 +1,141 @@
-{
-    "tituloProjeto" : "My Internet Periodic Table",
-    "fraseProjeto" : "How I waste my time on the Internet?",
-    "Empresas":
-    [  
-        {
-            "Abreviacao": "",
-            "Coluna": 3,
-            "Cor": "",
-            "Descricao": "",
-            "Explicacao": "",
-            "Grupo": "EmptySpacer1", 
-            "Linha": 1,
-            "Nome": ""
-        },
-        {
-            "Abreviacao": "",
-            "Coluna": 4,
-            "Cor": "",
-            "Descricao": "",
-            "Explicacao": "",
-            "Grupo": "EmptySpacer1", 
-            "Linha": 1,
-            "Nome": ""
-        },
-        {
-            "Abreviacao": "",
-            "Coluna": 5,
-            "Cor": "",
-            "Descricao": "",
-            "Explicacao": "",
-            "Grupo": "EmptySpacer1", 
-            "Linha": 1,
-            "Nome": ""
-        },
-        {
-            "Abreviacao": "",
-            "Coluna": 6,
-            "Cor": "",
-            "Descricao": "",
-            "Explicacao": "",
-            "Grupo": "EmptySpacer1", 
-            "Linha": 1,
-            "Nome": ""
-        },
-        {
-            "Abreviacao": "",
-            "Coluna": 1,
-            "Cor": "",
-            "Descricao": "",
-            "Explicacao": "",
-            "Grupo": "EmptySpacer2", 
-            "Linha": 4,
-            "Nome": ""
-        },
-        
+function main() {
+    const companies = getData();
+    renderTable(companies);
+
+    const groups = [...new Set(companies.map(c => c.Grupo))];
+    renderLegend(groups);
+
+    setEventListeners();
+}
+
+function renderTable(companies) {
+    render(companies, 'table-inner', createTableItem);
+}
+
+function renderLegend(groups) {
+    render(groups, 'legend-inner', createLegendItem);
+}
+
+/** Returns an HTML element of the table item. */
+function createTableItem(company) {
+    let tableItem = document.createElement('div');
+    tableItem.className = 'table-item';
+    tableItem.style.gridRow = company.Linha;
+    tableItem.style.gridColumn = company.Coluna;
+    tableItem.style.color = company.Cor;
+    tableItem.style.backgroundColor = company.Cor;
+    tableItem.addEventListener('click', () => onTableItemClicked(company));
+
+    let tableItemInner = document.createElement('div');
+    tableItemInner.className = 'table-item-inner';
+    tableItemInner.classList.add(toAttr(company.Grupo));
+
+    let shortTitle = document.createElement('div');
+    shortTitle.className = 'short-title';
+    shortTitle.innerHTML = company.Abreviacao;
+
+    let title = document.createElement('div');
+    title.className = 'title';
+    title.innerHTML = company.Nome;
+
+    tableItem.appendChild(tableItemInner);
+    tableItemInner.appendChild(shortTitle);
+    tableItemInner.appendChild(title);
+
+    return tableItem;
+}
+
+/** Returns an HTML element of the legend item. */
+function createLegendItem(group) {
+    let legendItem = document.createElement('div');
+    legendItem.className = 'legend-item';
+
+    let checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.id = toAttr(group);
+    checkbox.addEventListener('click', (e) => onLegendItemClicked(e.target));
+
+    let marker = document.createElement('div');
+    marker.className = 'legend-item-marker';
+    let markerColor = document.querySelector('.' + toAttr(group)).parentElement.style.color;
+    marker.style.backgroundColor = markerColor;
+
+    let label = document.createElement('label');
+    label.htmlFor = toAttr(group);
+    label.innerHTML = group;
+
+    legendItem.appendChild(checkbox);
+    legendItem.appendChild(marker);
+    legendItem.appendChild(label);
+
+    return legendItem;
+}
+
+/** Handles table item click. */
+function onTableItemClicked(company) {
+    title = document.querySelector('.modal-title');
+    title.style.color = company.Cor;
+    title.innerHTML = company.Nome;
+
+    let group = document.querySelector('.modal-group');
+    group.style.color = company.Cor;
+    group.innerHTML = company.Grupo;
+
+    document.querySelector('.modal-description').innerHTML = company.Descricao;
+    document.querySelector('.modal').style.display = 'flex';
+}
+
+/** Handles legend item click. */
+function onLegendItemClicked(legendItem) {
+    let tableItems = document.getElementsByClassName(legendItem.id);
+
+    if (legendItem.checked) {
+        legendItem.parentElement.classList.add('selected');
+        for (const item of tableItems) {
+            item.classList.add('highlight');
+        }
+    } else {
+        legendItem.parentElement.classList.remove('selected');
+        for (const item of tableItems) {
+            item.classList.remove('highlight');
+        }
+    }
+}
+
+/** Renders HTML elements created by given function inside a root element. */
+function render(iterable, rootElementId, createHTMLElement) {
+    const rootElement = document.getElementById(rootElementId);
+    rootElement.innerHTML = '';
+    for (const item of iterable) {
+        rootElement.appendChild(createHTMLElement(item));
+    }
+}
+
+/** Returns string formatted as attribute (with dashes and lowercase). */
+function toAttr(string) {
+    return string.replaceAll(' ', '-').toLowerCase();
+}
+
+/** Sets event listeners for closing modal. */
+function setEventListeners() {
+    window.addEventListener('click', (e) => closeModal(e));
+    document.addEventListener('keydown', (e) => closeModal(e));
+}
+
+function closeModal(e) {
+    const target = e.target.className;
+    if (target === 'modal' || target === 'modal-close' || e.key === 'Escape') {
+        document.querySelector('.modal').style.display = 'none';
+    }
+}
+
+function getData() {
+    return [
         {
             "Abreviacao": "Li",
             "Coluna": 1,
             "Cor": "#CBC634",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "I&#39;m only on here to reject invitations 😂",
             "Grupo": "Social Media",
             "Linha": 1,
             "Nome": "Linkedin"
@@ -69,7 +145,6 @@
             "Coluna": 2,
             "Cor": "#CBC634",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Only so I don&#39;t miss out on my friends&#39; milestones 🤷",
             "Grupo": "Social Media",
             "Linha": 1,
             "Nome": "Facebook"
@@ -79,7 +154,6 @@
             "Coluna": 7,
             "Cor": "#5A88E5",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Looking at amazing Dribbble 🏀 shots and internally die from the amount of talent/skill out there",
             "Grupo": "Personal Development",
             "Linha": 1,
             "Nome": "Dribbble"
@@ -89,7 +163,6 @@
             "Coluna": 8,
             "Cor": "#58AC30",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Coming up with sassy commit messages 🔥",
             "Grupo": "Serious Work",
             "Linha": 1,
             "Nome": "Commits"
@@ -99,7 +172,6 @@
             "Coluna": 9,
             "Cor": "#58AC30",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Making custom emojis for Slack 💪🏻",
             "Grupo": "Serious Work",
             "Linha": 1,
             "Nome": "Slack"
@@ -109,7 +181,6 @@
             "Coluna": 1,
             "Cor": "#FF616D",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "&#39;Wikipedia Wormhole&#39; is a thing. And it is dangerous 🐛",
             "Grupo": "Fun Stuff",
             "Linha": 2,
             "Nome": "Wikipedia"
@@ -119,7 +190,6 @@
             "Coluna": 2,
             "Cor": "#FF616D",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Choosing the right playlist. (If my Spotify is working... it&#39;s always not working)",
             "Grupo": "Fun Stuff",
             "Linha": 2,
             "Nome": "Spotify"
@@ -129,7 +199,6 @@
             "Coluna": 3,
             "Cor": "#CBC634",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "If you say something witty, it&#39;s going on my Twitter 🐦",
             "Grupo": "Social Media",
             "Linha": 2,
             "Nome": "Twitter"
@@ -139,7 +208,6 @@
             "Coluna": 4,
             "Cor": "#CBC634",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Professional Dota 2 Watcher right here ✌️",
             "Grupo": "Social Media",
             "Linha": 2,
             "Nome": "Twitch"
@@ -149,7 +217,6 @@
             "Coluna": 5,
             "Cor": "#58AC30",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Creating GitHub issues, a.k.a. tossing problems which I can solve to the frontend team",
             "Grupo": "Serious Work",
             "Linha": 2,
             "Nome": "Github"
@@ -159,7 +226,6 @@
             "Coluna": 6,
             "Cor": "#58AC30",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Trying to get yarn working after an update. The main reason I toss issues to the frontend team.",
             "Grupo": "Serious Work",
             "Linha": 2,
             "Nome": "Yarn"
@@ -169,17 +235,15 @@
             "Coluna": 7,
             "Cor": "#5A88E5",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "A skill I&#39;m trying to learn 🎨... and failing to learn 😛",
             "Grupo": "Personal Development",
             "Linha": 2,
-            "Nome": "Illustration"
+            "Nome": "Ilustratin"
         },
         {
             "Abreviacao": "Te",
             "Coluna": 8,
             "Cor": "#5A88E5",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Resident Designer. Keeping the diminishing flame of web design in me alive 🕯️",
             "Grupo": "Personal Development",
             "Linha": 2,
             "Nome": "TellyStat"
@@ -189,7 +253,6 @@
             "Coluna": 9,
             "Cor": "#5A88E5",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "I just need to stop adding items and actually start doing things. Am I the only one who is still using Wunderlist? 😂",
             "Grupo": "Personal Development",
             "Linha": 2,
             "Nome": "Wunderlis"
@@ -199,7 +262,6 @@
             "Coluna": 1,
             "Cor": "#FF616D",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "I have zero cooking skills, so I watch cooking videos and never try cooking for real 🍳",
             "Grupo": "Fun Stuff",
             "Linha": 3,
             "Nome": "Cooking"
@@ -209,7 +271,6 @@
             "Coluna": 2,
             "Cor": "#FF616D",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Or any animal gifs, basically. 🐈🐕🦊🦔🦉🐍🐬🦄",
             "Grupo": "Fun Stuff",
             "Linha": 3,
             "Nome": "Dog Gifs"
@@ -219,17 +280,15 @@
             "Coluna": 3,
             "Cor": "#FF616D",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Getting distracted by Toggl comics 🙃",
             "Grupo": "Fun Stuff",
             "Linha": 3,
-            "Nome": "TogglBlog"
+            "Nome": "Toggl Blo"
         },
         {
             "Abreviacao": "Gg",
             "Coluna": 4,
             "Cor": "#5A88E5",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "I google every damn thing. Including movie spoilers. While watching the movie. Yes.",
             "Grupo": "Personal Development",
             "Linha": 3,
             "Nome": "Google"
@@ -239,7 +298,6 @@
             "Coluna": 5,
             "Cor": "#5A88E5",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "I like spreadsheets so I create them for the smallest reasons 🧐",
             "Grupo": "Personal Development",
             "Linha": 3,
             "Nome": "Excel"
@@ -249,7 +307,6 @@
             "Coluna": 6,
             "Cor": "#58AC30",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "I still StackOverflow the simplest shit &#39;just to be sure&#39;. Where will we be without it ❤️",
             "Grupo": "Serious Work",
             "Linha": 3,
             "Nome": "StackOv."
@@ -259,7 +316,6 @@
             "Coluna": 7,
             "Cor": "#58AC30",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "It&#39;s very much not my job, but sometimes I stick my hand into the Coding Projects jar 🍪 anyway",
             "Grupo": "Serious Work",
             "Linha": 3,
             "Nome": "Coding"
@@ -269,7 +325,6 @@
             "Coluna": 8,
             "Cor": "#5A88E5",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "I spend so much time on Codepen, I decided to go Pro because I felt bad 💸",
             "Grupo": "Personal Development",
             "Linha": 3,
             "Nome": "Codepen"
@@ -279,7 +334,6 @@
             "Coluna": 9,
             "Cor": "#5A88E5",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "We all have that one thing that keeps us alive 🛫🗺️",
             "Grupo": "Personal Development",
             "Linha": 3,
             "Nome": "Travel"
@@ -289,7 +343,6 @@
             "Coluna": 2,
             "Cor": "#CBC634",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Fuck this app. It&#39;s a terrible love-hate relationship.",
             "Grupo": "Social Media",
             "Linha": 4,
             "Nome": "Instagram"
@@ -299,7 +352,6 @@
             "Coluna": 3,
             "Cor": "#FF616D",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Obsessing over musicals and stalking broadway stars is 👏🏻 not 👏🏻 a 👏🏻 crime!",
             "Grupo": "Fun Stuff",
             "Linha": 4,
             "Nome": "Musicals"
@@ -309,7 +361,6 @@
             "Coluna": 4,
             "Cor": "#FF616D",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "I learn memes, I make memes, I breathe memes.",
             "Grupo": "Fun Stuff",
             "Linha": 4,
             "Nome": "Memes"
@@ -319,7 +370,6 @@
             "Coluna": 5,
             "Cor": "#CBC634",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Battling double columns in Notion",
             "Grupo": "Social Media",
             "Linha": 4,
             "Nome": "Notion"
@@ -329,7 +379,6 @@
             "Coluna": 6,
             "Cor": "#CBC634",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Oh my god. Someone please save me from this Reddit hell hole 😭",
             "Grupo": "Social Media",
             "Linha": 4,
             "Nome": "Reddit"
@@ -339,7 +388,6 @@
             "Coluna": 7,
             "Cor": "#CBC634",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Research &amp; Documentation nobody asks for 🤓📝",
             "Grupo": "Social Media",
             "Linha": 4,
             "Nome": "Research"
@@ -349,7 +397,6 @@
             "Coluna": 8,
             "Cor": "#CBC634",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Stats. Data. Stats. Data. 📊 Just lots of reporting.",
             "Grupo": "Social Media",
             "Linha": 4,
             "Nome": "Stats"
@@ -359,11 +406,11 @@
             "Coluna": 9,
             "Cor": "#CBC634",
             "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
-            "Explicacao": "Ads. Ads. Ads. If you&#39;ve seen a Toggl ad, it was me. (Sorry)",
             "Grupo": "Social Media",
             "Linha": 4,
             "Nome": "Ads"
-        } 
+        }
     ]
 }
- 
+
+main();
