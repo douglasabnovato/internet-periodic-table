@@ -1,3 +1,24 @@
+
+
+let themeToggler = document.getElementById("theme-toggler");
+
+themeToggler.addEventListener("click", () => {
+
+
+  let targetTheme;
+  let currentTheme = document.documentElement.getAttribute("data-theme"); 
+
+  if (currentTheme === "dark") {
+    targetTheme = "light";
+  } else {
+    targetTheme = "dark";
+  } 
+  localStorage.setItem("theme", targetTheme);
+  document.documentElement.setAttribute("data-theme", targetTheme);
+
+});
+
+
 function main() {
     const companies = getData();
     renderTable(companies);

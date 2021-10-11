@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html> 
-    <html lang="en"> 
+    <html lang="en" data-theme="dark" > 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Projeto Teste para Vaga">
         <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="Douglas A. B. Novato">
+        <meta name="author" content="Douglas A. B. Novato"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap">
-        <link rel="stylesheet" href="styles/style.css">  
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"  type="text/css" > 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap">  
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700">   
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css" /> 
+        <link rel="stylesheet" href="styles/style.css"> 
         <script src="scripts/main.js" defer></script> 
         <title>My Internet Periodic Table</title> 
     </head>
-    <body>
+    <body> 
         <div class="modal">
             <div class="modal-content">
                 <div class="modal-header">
@@ -26,12 +28,15 @@
                 </div>
                 <div class="modal-description"></div>
             </div>
-        </div>
-    
-        <header>
-            <h1>My Internet Periodic Table</h1>
-            <h5>How I waste my time on the Internet</h5>
-        </header>
+        </div> 
+
+        <header> 
+            <div class="toggler-container">
+                <div id="theme-toggler">
+                    <span class="mdi mdi-theme-light-dark"></span>
+                </div>
+            </div> 
+        </header> 
     
         <div id="table">
             <div id="table-inner"></div>
