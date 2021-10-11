@@ -430,6 +430,15 @@ function getData() {
             "Grupo": "Social Media",
             "Linha": 4,
             "Nome": "Ads"
+        },
+        {
+            "Abreviacao": "Dg",
+            "Coluna": 1,
+            "Cor": "#DDDAA7",
+            "Descricao": "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+            "Grupo": "Teste",
+            "Linha": 5,
+            "Nome": "Dgs"
         }
     ]
 }
