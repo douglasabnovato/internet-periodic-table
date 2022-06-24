@@ -3,7 +3,7 @@
 </h4> 
 
 <h1 align="center">
-    <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="/assets/tela-0.jpg" />
+    <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-0.jpg" />
 </h1>
 
 ## 🚀 Descrição do Desafio
@@ -67,13 +67,23 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 - [ ] ProDoc310: responsividade
 - [ ] ProDoc311: off line (mensagem "disponível") 
 
+#### Melhorias
+
+- [ ] ProDoc401: aprender manipular json
+- [ ] ProDoc402: posicionar o botão tema
+- [ ] ProDoc403: barra de rolagem vertical
+- [ ] ProDoc404: cores de textos em modo light
+- [ ] ProDoc405: inserir um texto real no modal
+- [ ] ProDoc406: inserir logo do app no modal
+- [ ] ProDoc407: criar issues no board projects para cada tarefa citada aqui no readme
+
 #### Analisar itens de maior complexidade 
 
 1. o css do degradê 
 2. o clique para abertura do modal
 3. o efeito de seleção conforme o marcar/desmarcar na legenda
 4. o posicionamento da tabela ao clicar na legenda 
-<img alt="dificuldade" title="#dificuldade" src="/assets/dificuldade.jpeg" width="400px">
+<img alt="dificuldade" title="#dificuldade" src="./.github/dificuldade.jpeg" width="400px">
 
 #### Aprendizado
 
@@ -84,12 +94,12 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 ## 🛠 Versão Final
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="/assets/tela-0.jpg" width="400px"> 
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="/assets/tela-5.jpg" width="400px">
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="/assets/tela-1.jpg" width="400px">
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="/assets/tela-4.jpg" width="400px"> 
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="/assets/tela-2.jpg" width="400px">
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="/assets/tela-3.jpg" width="400px"> 
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-0.jpg" width="400px"> 
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-5.jpg" width="400px">
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-1.jpg" width="400px">
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-4.jpg" width="400px"> 
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-2.jpg" width="400px">
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-3.jpg" width="400px"> 
 </p>
 
 [git]: https://git-scm.com/doc
