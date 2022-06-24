@@ -61,6 +61,11 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 - [ ] ProDoc304: Ter uma prévia descrição quando passa o mouse sobre o elemento; 
 - [ ] ProDoc305: Adicionar essa prévia descrição via json;
 - [ ] ProDoc306: Salvar a preferência do tema escolhido via localstorage;
+- [ ] ProDoc307: html bem elaborado, exemplo: rel="noopener": link aberto com dependência com a página de origem, proteção 
+- [ ] ProDoc308: trabalhar persistência do dark e light seguindo as preferências do so: "prefers - css - color - schema", mac magazine
+- [ ] ProDoc309: mobile first
+- [ ] ProDoc310: responsividade
+- [ ] ProDoc311: off line (mensagem "disponível") 
 
 #### Analisar itens de maior complexidade 
 
@@ -72,9 +77,9 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 
 #### Aprendizado
 
-1. atenção ao prazo e por isso, acompanhar o tempo de resolução de cada uma das tarefas para conseguir cumprir as entregas dentro do planejado.
-2. diante do problema, pesquisar, rascunhar soluções, tentar resolver, mas caso não conseguir dentro de um prazo, perguntar e buscar orientações de forma inteligente.
-3. ser objetivo as tarefas propostas.
+1. atenção ao prazo e por isso, acompanhar o tempo de resolução de cada uma das tarefas para conseguir cumprir as entregas dentro do planejado
+2. diante do problema, pesquisar, rascunhar soluções, tentar resolver, mas caso não conseguir dentro de um prazo, perguntar e buscar orientações de forma inteligente
+3. ser objetivo na resolução das tarefas propostas
 
 ## 🛠 Versão Final
 
@@ -92,5 +97,3 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 [css]: https://developer.mozilla.org/en-US/docs/Web/CSS 
 [html]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-
-
