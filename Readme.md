@@ -55,7 +55,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 
 #### Meu planejamento
 
-- [ ] ProDoc301: Utilizar o git;  
+- [ ] ProDoc301: Utilizar o git e github 
 - [ ] ProDoc302: Publicar essa aplicação em um servidor gratuito: [periodic table on netlify](https://musing-poitras-bf14e7.netlify.app/);
 - [ ] ProDoc303: Editar ícones e links de redes sociais;
 - [ ] ProDoc304: Ter uma prévia descrição quando passa o mouse sobre o elemento; 
@@ -75,7 +75,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 - [ ] ProDoc404: cores de textos em modo light
 - [ ] ProDoc405: inserir um texto real no modal
 - [ ] ProDoc406: inserir logo do app no modal
-- [ ] ProDoc407: criar issues no board projects para cada tarefa citada aqui no readme
+- [ ] ProDoc407: criar issues e criar issues no board projects para cada tarefa citada aqui no readme
 
 #### Analisar itens de maior complexidade 
 
