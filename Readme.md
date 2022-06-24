@@ -75,7 +75,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 - [ ] ProDoc404: cores de textos em modo light
 - [ ] ProDoc405: inserir um texto real no modal
 - [ ] ProDoc406: inserir logo do app no modal
-- [ ] ProDoc407: criar issues e criar issues no board projects para cada tarefa citada aqui no readme
+- [x] ProDoc407: criar issues no projeto e criar issues no board projects para cada tarefa citada aqui no readme
 
 #### Analisar itens de maior complexidade 
 
