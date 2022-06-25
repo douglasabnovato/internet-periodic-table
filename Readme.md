@@ -32,14 +32,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Git][git]: controle de versão e gestão de projetos
 - [Github][github]: repositório remoto para compartilharmento de código
 
-### Desafíos Principais
+### Desafios Principais
 
 - [x] ProDoc101: Criar a tabela baseada no JSON fornecido: primeiramente estaticamente
 - [x] ProDoc102: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele: recebe um tom forte da color base
 - [x] ProDoc103: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda: todos ficam em um tom forte da color base
 - [x] ProDoc104: Aplicar estratégias de responsividade, mas sempre mantendo o aspecto de tabela periódica. Ficar flexíveis para caber em 1024px da tela sem distorção. Abaixo desta resolução, deve ser criado uma barra de rolagem ou algo criativo que possa ser utilizado em dispositivos móveis.
 
-### Desafíos Extras
+### Desafios Extras
 
 - [x] ProDoc201: Ao clicar sobre um elemento, abrir um modal que apresente a informação de descrição. Utilizar a propriedade "Descrição" presente no JSON de referência. 
 - [x] ProDoc202: O modal deve fechar ao clicar fora da área de conteúdo, mas o ideal é que seja criado também um botão (X) auxiliar que serve para fechá-lo.
