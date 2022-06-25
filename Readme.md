@@ -37,12 +37,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [x] ProDoc101: Criar a tabela baseada no JSON fornecido: primeiramente estaticamente
 - [x] ProDoc102: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele: recebe um tom forte da color base
 - [x] ProDoc103: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda: todos ficam em um tom forte da color base
-- [ ] ProDoc104: Fazer o responsivo sem desmembrar os itens do aspecto que eles estão. Com isso, os mesmos devem ficar flexíveis pelo menos para caber em 1024px da tela sem distorção. Abaixo desta resolução, deve ser criado uma barra de rolagem ou algo criativo que possa ser utilizado em dispositivos móveis. Mas sempre mantendo o aspecto de tabela periódica;
+- [x] ProDoc104: Aplicar estratégias de responsividade, mas sempre mantendo o aspecto de tabela periódica. Ficar flexíveis para caber em 1024px da tela sem distorção. Abaixo desta resolução, deve ser criado uma barra de rolagem ou algo criativo que possa ser utilizado em dispositivos móveis.
 
 ### Desafíos Extras
 
-- [ ] ProDoc201: Ao clicar sobre um elemento, abrir um modal que apresente a informação de descrição, propriedade "Descrição" presente no JSON de referência. 
-- [ ] ProDoc202: O modal deve fechar ao clicar fora da área de conteúdo, mas o ideal é que seja criado também um botão (X) auxiliar que serve para fechá-lo. 
+- [x] ProDoc201: Ao clicar sobre um elemento, abrir um modal que apresente a informação de descrição. Utilizar a propriedade "Descrição" presente no JSON de referência. 
+- [x] ProDoc202: O modal deve fechar ao clicar fora da área de conteúdo, mas o ideal é que seja criado também um botão (X) auxiliar que serve para fechá-lo.
 - [ ] ProDoc203: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
 - [ ] ProDoc204: Opções de acessibilidade no teclado como trocar o foco dos itens na tabela ao apertar a tecla tab e acessar o modal apertando as teclas barra de espaço ou enter;
 - [x] ProDoc205: Criar um botão na tela que ao clicar, contemple os temas escuro e claro: inserido uma imagem para mudar de tema dark e light
@@ -55,9 +55,9 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 
 #### Meu planejamento
 
-- [ ] ProDoc301: Utilizar o git e github 
+- [x] ProDoc301: Utilizar o git para versionamento e github para gestão de projeto.
 - [x] ProDoc302: Publicar a aplicação em um servidor gratuito. Utilizado o netlify: [periodic table on netlify](https://musing-poitras-bf14e7.netlify.app/);
-- [ ] ProDoc303: Editar ícones e links de redes sociais;
+- [x] ProDoc303: Editar ícones e links de redes sociais para meus perfis;
 - [ ] ProDoc304: Ter uma prévia descrição quando passa o mouse sobre o elemento; 
 - [ ] ProDoc305: Adicionar essa prévia descrição via json;
 - [ ] ProDoc306: Salvar a preferência do tema escolhido via localstorage;
