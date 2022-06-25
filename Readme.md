@@ -42,7 +42,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Desafíos Extras
 
 - [x] ProDoc201: Ao clicar sobre um elemento, abrir um modal que apresente a informação de descrição. Utilizar a propriedade "Descrição" presente no JSON de referência. 
-- [ ] ProDoc202: O modal deve fechar ao clicar fora da área de conteúdo, mas o ideal é que seja criado também um botão (X) auxiliar que serve para fechá-lo. 
+- [x] ProDoc202: O modal deve fechar ao clicar fora da área de conteúdo, mas o ideal é que seja criado também um botão (X) auxiliar que serve para fechá-lo.
 - [ ] ProDoc203: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
 - [ ] ProDoc204: Opções de acessibilidade no teclado como trocar o foco dos itens na tabela ao apertar a tecla tab e acessar o modal apertando as teclas barra de espaço ou enter;
 - [x] ProDoc205: Criar um botão na tela que ao clicar, contemple os temas escuro e claro: inserido uma imagem para mudar de tema dark e light
