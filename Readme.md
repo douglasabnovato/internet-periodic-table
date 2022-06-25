@@ -34,9 +34,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Desafíos Principais
 
-- [ ] ProDoc101: Criar a tabela baseada no JSON fornecido;
-- [ ] ProDoc102: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele;
-- [ ] ProDoc103: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda;
+- [x] ProDoc101: Criar a tabela baseada no JSON fornecido: primeiramente estaticamente
+- [x] ProDoc102: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele: recebe um tom forte da color base
+- [x] ProDoc103: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda: todos ficam em um tom forte da color base
 - [ ] ProDoc104: Fazer o responsivo sem desmembrar os itens do aspecto que eles estão. Com isso, os mesmos devem ficar flexíveis pelo menos para caber em 1024px da tela sem distorção. Abaixo desta resolução, deve ser criado uma barra de rolagem ou algo criativo que possa ser utilizado em dispositivos móveis. Mas sempre mantendo o aspecto de tabela periódica;
 
 ### Desafíos Extras
@@ -45,7 +45,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [ ] ProDoc202: O modal deve fechar ao clicar fora da área de conteúdo, mas o ideal é que seja criado também um botão (X) auxiliar que serve para fechá-lo. 
 - [ ] ProDoc203: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado;
 - [ ] ProDoc204: Opções de acessibilidade no teclado como trocar o foco dos itens na tabela ao apertar a tecla tab e acessar o modal apertando as teclas barra de espaço ou enter;
-- [ ] ProDoc205: Criar um botão na tela que ao clicar, contemple os temas escuro e claro;
+- [x] ProDoc205: Criar um botão na tela que ao clicar, contemple os temas escuro e claro: inserido uma imagem para mudar de tema dark e light
 - [ ] ProDoc206: A tabela deve ser dinâmica, caso um novo elemento seja adicionado ao JSON, ele deve ser adicionado visualmente a tabela;
 - [ ] ProDoc207: Caso um novo elemento de um novo grupo seja adicionado ao JSON, o efeito de selecionar o grupo na legenda deve contemplar esse novo elemento.
 
