@@ -57,7 +57,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 
 - [x] ProDoc301: Utilizar o git para versionamento e github para gestão de projeto.
 - [x] ProDoc302: Publicar a aplicação em um servidor gratuito. Utilizado o netlify: [periodic table on netlify](https://musing-poitras-bf14e7.netlify.app/);
-- [ ] ProDoc303: Editar ícones e links de redes sociais;
+- [x] ProDoc303: Editar ícones e links de redes sociais para meus perfis;
 - [ ] ProDoc304: Ter uma prévia descrição quando passa o mouse sobre o elemento; 
 - [ ] ProDoc305: Adicionar essa prévia descrição via json;
 - [ ] ProDoc306: Salvar a preferência do tema escolhido via localstorage;
