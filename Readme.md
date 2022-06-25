@@ -36,16 +36,16 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [x] ProDoc101: Criar a tabela baseada no JSON fornecido, primeiramente estaticamente: a função getData() é responsável por fornecer os dados originais. Então, a função main chama a função renderTable passando os dados conforme precisa. A função renderTable manipula o html via DOM para renderizar conforme estilização.
 - [x] ProDoc102: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele: recebe um tom forte da color base: efeito hover realizado no css com .table-item:hover e a DOM manipulou em createTableItem.
-- [x] ProDoc103: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda: todos ficam em um tom forte da color base
-- [x] ProDoc104: Aplicar estratégias de responsividade, mas sempre mantendo o aspecto de tabela periódica. Ficar flexíveis para caber em 1024px da tela sem distorção. Abaixo desta resolução, deve ser criado uma barra de rolagem ou algo criativo que possa ser utilizado em dispositivos móveis.
+- [x] ProDoc103: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda, todos ficam em um tom forte da color base. A função onLegendItemClicked é a responsável por selecionar todos os elementos da tabela que correspondem ao grupo da legenda. Ela é chamada pela createLegendItem com o evento que fica "ouvindo" o clica.
+- [x] ProDoc104: Aplicar estratégias de responsividade, mas sempre mantendo o aspecto de tabela periódica. Ficar flexíveis para caber em 1024px da tela sem distorção. Abaixo desta resolução, deve ser criado uma barra de rolagem ou algo criativo que possa ser utilizado em dispositivos móveis: uma media para organizar a legenda em colunas quando atinge max-width: 750px, e em #table-inner na linha min-width: 1024px para garantir que menor que esse width apresente uma barra de rolagem para visualizar a tabela inteira mas sem quebrar as linhas usando display: grid.
 
 ### Desafios Extras
 
-- [x] ProDoc201: Ao clicar sobre um elemento, abrir um modal que apresente a informação de descrição. Utilizar a propriedade "Descrição" presente no JSON de referência. 
-- [x] ProDoc202: O modal deve fechar ao clicar fora da área de conteúdo, mas o ideal é que seja criado também um botão (X) auxiliar que serve para fechá-lo.
+- [x] ProDoc201: Ao clicar sobre um elemento, abrir um modal que apresente a informação de descrição. Utilizar a propriedade "Descrição" presente no JSON de referência: a função onTableItemClicked é responsável por abrir o modal com as informações conforme o item clicado. A função createTableItem é a que chama essa função e é a responsável por identifical quais as informações irão ser exibidas nesse modal. 
+- [x] ProDoc202: O modal deve fechar ao clicar fora da área de conteúdo, mas o ideal é que seja criado também um botão (X) auxiliar que serve para fechá-lo: a função setEventListeners é responsável por atender a essas duas maneiras de fechar o modal e é colocada a disposição sendo chamada no main, assim que inicializa a aplicação.
 - [ ] ProDoc203: E mais desejável ainda é que ao apertar a tecla ESC, o modal também seja fechado: pesquisando a melhor forma de fazer.
 - [ ] ProDoc204: Opções de acessibilidade no teclado como trocar o foco dos itens na tabela ao apertar a tecla tab e acessar o modal apertando as teclas barra de espaço ou enter;
-- [x] ProDoc205: Criar um botão na tela que ao clicar, contemple os temas escuro e claro: inserido uma imagem para mudar de tema dark e light
+- [x] ProDoc205: Criar um botão na tela que ao clicar, contemple os temas escuro e claro: inserido uma imagem para mudar de tema dark e light: no header é inserido um botão que é um toggle que muda conforme o estado atual. Alternando dark e light.
 - [ ] ProDoc206: A tabela deve ser dinâmica, caso um novo elemento seja adicionado ao JSON, ele deve ser adicionado visualmente a tabela;
 - [ ] ProDoc207: Caso um novo elemento de um novo grupo seja adicionado ao JSON, o efeito de selecionar o grupo na legenda deve contemplar esse novo elemento.
 
@@ -55,9 +55,9 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 
 #### Meu planejamento
 
-- [x] ProDoc301: Utilizar o git para versionamento e github para gestão de projeto.
-- [x] ProDoc302: Publicar a aplicação em um servidor gratuito. Utilizado o netlify: [periodic table on netlify](https://musing-poitras-bf14e7.netlify.app/);
-- [x] ProDoc303: Editar ícones e links de redes sociais para meus perfis;
+- [x] ProDoc301: Utilizar o git para versionamento e github para gestão de projeto: Registrar os commits e permitir acompanhar as tarefas no board de forma automatizada com as issues.
+- [x] ProDoc302: Publicar a aplicação em um servidor gratuito: Utilizado o netlify permitindo acessar em [periodic table on netlify](https://musing-poitras-bf14e7.netlify.app/);
+- [x] ProDoc303: Editar ícones e links de redes sociais para meus perfis: direcionando para os meus perfils
 - [ ] ProDoc304: Ter uma prévia descrição quando passa o mouse sobre o elemento; 
 - [ ] ProDoc305: Adicionar essa prévia descrição via json;
 - [ ] ProDoc306: Salvar a preferência do tema escolhido via localstorage;
@@ -74,7 +74,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 - [ ] ProDoc404: cores de textos em modo light
 - [ ] ProDoc405: inserir um texto real no modal
 - [ ] ProDoc406: inserir logo do app no modal
-- [x] ProDoc407: criar issues e tarefas board projects para cada tarefa do desafio
+- [x] ProDoc407: criar issues e tarefas board projects para cada tarefa do desafio: rodando git flow e kanban para simular interações.
 
 #### Analisar itens de maior complexidade 
 

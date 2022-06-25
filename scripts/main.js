@@ -33,6 +33,7 @@ function renderLegend(groups) {
 }
 
 function createTableItem(company) {
+
   let tableItem = document.createElement("div");
   tableItem.className = "table-item";
   tableItem.style.gridRow = company.Linha;
@@ -58,9 +59,11 @@ function createTableItem(company) {
   tableItemInner.appendChild(title);
 
   return tableItem;
+
 }
 
 function createLegendItem(group) {
+
   let legendItem = document.createElement("div");
   legendItem.className = "legend-item";
 
@@ -84,9 +87,11 @@ function createLegendItem(group) {
   legendItem.appendChild(label);
 
   return legendItem;
+
 }
 
 function onTableItemClicked(company) {
+
   title = document.querySelector(".modal-title");
   title.style.color = company.Cor;
   title.innerHTML = company.Nome;
@@ -97,9 +102,11 @@ function onTableItemClicked(company) {
 
   document.querySelector(".modal-description").innerHTML = company.Descricao;
   document.querySelector(".modal").style.display = "flex";
+
 }
 
 function onLegendItemClicked(legendItem) {
+
   let tableItems = document.getElementsByClassName(legendItem.id);
 
   if (legendItem.checked) {
@@ -108,13 +115,14 @@ function onLegendItemClicked(legendItem) {
     for (const item of tableItems) {
       item.classList.add("highlight");
     }
-    
+
   } else {
     legendItem.parentElement.classList.remove("selected");
     for (const item of tableItems) {
       item.classList.remove("highlight");
     }
   }
+  
 }
 
 function render(iterable, rootElementId, createHTMLElement) {

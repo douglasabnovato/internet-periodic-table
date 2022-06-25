@@ -1,36 +1,35 @@
-/* Temas */ 
-html[data-theme="dark"] { 
-  --theme-background: #202e38; 
+html[data-theme="dark"] {
+  --theme-background: #202e38;
   --theme-titulo: #f1f5f6;
-  --theme-frase: #f1f5f6; 
+  --theme-frase: #f1f5f6;
 
-  --theme-legend-text-light:#ccc;
-  --theme-legend-text-dark:#eee; 
+  --theme-legend-text-light: #ccc;
+  --theme-legend-text-dark: #eee;
 
-  --theme-legend-direction-light:#ccc;
-  --theme-legend-direction-dark:#eee;
+  --theme-legend-direction-light: #ccc;
+  --theme-legend-direction-dark: #eee;
 
-  --toggle-border: #f1f5f6; 
+  --toggle-border: #f1f5f6;
   --toggle-color: #f1f5f6;
-  --toggle-background-color: #202e38;  
+  --toggle-background-color: #202e38;
 
-  --footer-background-hover: rgba(255, 255, 255, 0.1); 
-  --footer-border:#fff; 
-  --footer-color:#fff; 
+  --footer-background-hover: rgba(255, 255, 255, 0.1);
+  --footer-border: #fff;
+  --footer-color: #fff;
 
   --periodic-element-inner-background: #202e38;
-
 }
-html[data-theme="light"] {   
-  --theme-background: #f1f5f6; 
+
+html[data-theme="light"] {
+  --theme-background: #f1f5f6;
   --theme-titulo: #202e38;
-  --theme-frase: #202e38; 
+  --theme-frase: #202e38;
 
-  --theme-legend-text-light:#202e38;
-  --theme-legend-text-dark:#202e38; 
+  --theme-legend-text-light: #202e38;
+  --theme-legend-text-dark: #202e38;
 
-  --theme-legend-direction-light:#202e38;
-  --theme-legend-direction-dark:#202e38;
+  --theme-legend-direction-light: #202e38;
+  --theme-legend-direction-dark: #202e38;
 
   --toggle-border: #202e38;
   --toggle-color: #202e38;
@@ -43,40 +42,37 @@ html[data-theme="light"] {
   --periodic-element-inner-background: #f1f5f6;
 }
 
-/* Gradiente */
 :root {
-
-  --background: #202e38; 
+  --background: #202e38;
   --titulo: #f1f5f6;
-  --frase: #f1f5f6; 
+  --frase: #f1f5f6;
 
-  --legend-text-light:#ccc;
-  --legend-text-dark:#eee; 
+  --legend-text-light: #ccc;
+  --legend-text-dark: #eee;
 
-  --light-legend-direction-light:#ccc;
-  --light-legend-direction-dark:#eee;
+  --light-legend-direction-light: #ccc;
+  --light-legend-direction-dark: #eee;
 
   --social-media-light: #f3f9a6;
-  --social-media-dark: #cbc634; 
+  --social-media-dark: #cbc634;
 
-  --fun-stuff-light:  #ff616d; 
+  --fun-stuff-light: #ff616d;
   --fun-stuff-dark: #ffc171;
 
   --just-trying-light: #37cfdc;
   --just-trying-dark: #5a88e5;
 
-  --intense-work-light:#a7df62;
-  --intense-work-dark: #58ac30; 
+  --intense-work-light: #a7df62;
+  --intense-work-dark: #58ac30;
 
-  --douglas-novato-light:#DA70D6;
-  --douglas-novato-dark:#C71585;
-
+  --douglas-novato-light: #DA70D6;
+  --douglas-novato-dark: #C71585;
 }
 
 body {
   font-family: 'DM Sans', sans-serif;
   color: #f1f5f6;
-  background: var(--theme-background); 
+  background: var(--theme-background);
   margin: 0px;
 }
 
@@ -157,12 +153,6 @@ header h5 {
   justify-content: center;
 }
 
-@media (max-width: 750px) {
-  #legend-inner {
-      flex-direction: column;
-  }
-}
-
 .legend-item {
   display: flex;
   width: fit-content;
@@ -198,7 +188,7 @@ input[type="checkbox"] {
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -206,7 +196,7 @@ input[type="checkbox"] {
   color: #222;
   background-color: #fff;
   height: fit-content;
-  max-height: 90%;  
+  max-height: 90%;
   max-width: 500px;
   margin: 1rem;
   padding: 20px;
@@ -238,12 +228,12 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* Rodapé com os links das redes sociais */
 footer {
   text-align: center;
   margin: 2em auto;
   width: 100%;
 }
+
 footer a {
   text-decoration: none;
   display: inline-block;
@@ -255,16 +245,17 @@ footer a {
   color: var(--footer-color);
   margin: 5px;
 }
+
 footer a:hover {
   background: var(--footer-background-hover);
 }
+
 footer a .icons {
   margin-top: 12px;
   display: inline-block;
   font-size: 20px;
 }
 
-/* Botão Tema */ 
 .toggler-container {
   margin-bottom: 10px;
   font-size: 50px;
@@ -278,4 +269,12 @@ footer a .icons {
   align-items: center;
   background-color: var(--toggle-background-color);
   color: var(--toggle-color);
+}
+
+@media (max-width: 750px) {
+
+  #legend-inner {
+    flex-direction: column;
+  }
+
 }
