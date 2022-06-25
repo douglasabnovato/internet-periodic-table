@@ -34,8 +34,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Desafios Principais
 
-- [x] ProDoc101: Criar a tabela baseada no JSON fornecido: primeiramente estaticamente
-- [x] ProDoc102: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele: recebe um tom forte da color base
+- [x] ProDoc101: Criar a tabela baseada no JSON fornecido, primeiramente estaticamente: a função getData() é responsável por fornecer os dados originais. Então, a função main chama a função renderTable passando os dados conforme precisa. A função renderTable manipula o html via DOM para renderizar conforme estilização.
+- [x] ProDoc102: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele: recebe um tom forte da color base: efeito hover realizado no css com .table-item:hover e a DOM manipulou em createTableItem.
 - [x] ProDoc103: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda: todos ficam em um tom forte da color base
 - [x] ProDoc104: Aplicar estratégias de responsividade, mas sempre mantendo o aspecto de tabela periódica. Ficar flexíveis para caber em 1024px da tela sem distorção. Abaixo desta resolução, deve ser criado uma barra de rolagem ou algo criativo que possa ser utilizado em dispositivos móveis.
 
