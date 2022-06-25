@@ -35,12 +35,22 @@ function renderLegend(groups) {
 function createTableItem(company) {
 
   let tableItem = document.createElement("div");
+  tableItem.tabIndex ="0";
   tableItem.className = "table-item";
   tableItem.style.gridRow = company.Linha;
   tableItem.style.gridColumn = company.Coluna;
   tableItem.style.color = company.Cor;
   tableItem.style.backgroundColor = company.Cor;
   tableItem.addEventListener("click", () => onTableItemClicked(company));
+  tableItem.addEventListener("keydown", function(e) {
+    if(e.key === 'Enter') {    
+        onTableItemClicked(company)    
+    }
+    if(e.which === 32) { 
+      e.preventDefault();
+      onTableItemClicked(company)    
+    }
+  });
 
   let tableItemInner = document.createElement("div");
   tableItemInner.className = "table-item-inner";
@@ -65,13 +75,14 @@ function createTableItem(company) {
 function createLegendItem(group) {
 
   let legendItem = document.createElement("div");
+  legendItem.tabIndex ="0";
   legendItem.className = "legend-item";
 
   let checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.id = toAttr(group);
   checkbox.addEventListener("click", (e) => onLegendItemClicked(e.target));
-
+  
   let marker = document.createElement("div");
   marker.className = "legend-item-marker";
 
