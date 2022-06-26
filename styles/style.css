@@ -40,9 +40,11 @@ html[data-theme="light"] {
   --footer-color: #202e38;
 
   --periodic-element-inner-background: #f1f5f6;
-}
+} 
 
 :root {
+  color-scheme: dark light;
+
   --background: #202e38;
   --titulo: #f1f5f6;
   --frase: #f1f5f6;
@@ -215,7 +217,7 @@ input[type="checkbox"] {
 
 footer {
   text-align: center;
-  margin: 2em auto;
+  margin: 1em auto;
   width: 100%;
 }
 
@@ -268,6 +270,58 @@ footer a .icons {
 
   #legend-inner {
     flex-direction: column;
+  }
+
+}
+
+@media (prefers-color-scheme: light) {
+
+  html[data-theme="light"] {
+    --theme-background: #f1f5f6;
+    --theme-titulo: #202e38;
+    --theme-frase: #202e38;
+  
+    --theme-legend-text-light: #202e38;
+    --theme-legend-text-dark: #202e38;
+  
+    --theme-legend-direction: #202e38; 
+  
+    --toggle-border: #202e38;
+    --toggle-color: #202e38;
+    --toggle-background-color: #f1f5f6;
+    --toggle-background-hover: #fff;
+  
+    --footer-background-hover: #fff;
+    --footer-border: #202e38;
+    --footer-color: #202e38;
+  
+    --periodic-element-inner-background: #f1f5f6;
+  } 
+  
+}
+
+@media (prefers-color-scheme: dark) {
+
+  html[data-theme="dark"] {
+    --theme-background: #202e38;
+    --theme-titulo: #f1f5f6;
+    --theme-frase: #f1f5f6;
+  
+    --theme-legend-text-light: #ccc;
+    --theme-legend-text-dark: #eee;
+  
+    --theme-legend-direction: #eee;
+  
+    --toggle-border: #f1f5f6;
+    --toggle-color: #f1f5f6;
+    --toggle-background-color: #202e38;
+    --toggle-background-hover: rgba(255, 255, 255, 0.1);
+  
+    --footer-background-hover: rgba(255, 255, 255, 0.1);
+    --footer-border: #fff;
+    --footer-color: #fff;
+  
+    --periodic-element-inner-background: #202e38;
   }
 
 }
