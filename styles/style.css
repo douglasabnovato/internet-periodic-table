@@ -6,8 +6,7 @@ html[data-theme="dark"] {
   --theme-legend-text-light: #ccc;
   --theme-legend-text-dark: #eee;
 
-  --theme-legend-direction-light: #ccc;
-  --theme-legend-direction-dark: #eee;
+  --theme-legend-direction: #eee;
 
   --toggle-border: #f1f5f6;
   --toggle-color: #f1f5f6;
@@ -29,8 +28,7 @@ html[data-theme="light"] {
   --theme-legend-text-light: #202e38;
   --theme-legend-text-dark: #202e38;
 
-  --theme-legend-direction-light: #202e38;
-  --theme-legend-direction-dark: #202e38;
+  --theme-legend-direction: #202e38; 
 
   --toggle-border: #202e38;
   --toggle-color: #202e38;
@@ -52,7 +50,8 @@ html[data-theme="light"] {
   --legend-text-light: #ccc;
   --legend-text-dark: #eee;
 
-  --light-legend-direction-light: #ccc;
+  --light-legend-direction: #eee;
+  --theme-legend-text-light: #202e38;
   --light-legend-direction-dark: #eee;
 
   --social-media-light: #f3f9a6;
@@ -149,10 +148,11 @@ body {
 
 .legend-item label {
   cursor: pointer;
+  color: var(--theme-legend-direction);
 }
 
 .selected {
-  border: 1px dashed #f1f5f6;
+  border: 1px dashed var(--toggle-border);
 }
 
 .legend-item-marker {

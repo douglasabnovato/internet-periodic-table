@@ -70,8 +70,8 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 
 - [ ] ProDoc401: aprender manipular json
 - [x] ProDoc402: inserir hover e melhor posicionar o botão do tema
-- [ ] ProDoc403: barra de rolagem vertical
-- [ ] ProDoc404: cores de textos em modo light
+- [x] ProDoc403: barra de rolagem vertical
+- [x] ProDoc404: cores de textos em modo light
 - [ ] ProDoc405: inserir um texto real no modal
 - [ ] ProDoc406: inserir logo do app no modal
 - [x] ProDoc407: criar issues e tarefas board projects para cada tarefa do desafio: rodando git flow e kanban para simular interações.
