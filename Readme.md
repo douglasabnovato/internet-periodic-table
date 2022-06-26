@@ -63,7 +63,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 - [x] ProDoc306: Salvar a preferência do tema escolhido via localstorage 
 - [ ] ProDoc307: html bem elaborado, exemplo: rel="noopener": link aberto com dependência com a página de origem, proteção 
 - [ ] ProDoc308: trabalhar persistência do dark e light seguindo as preferências do so: "prefers - css - color - schema", mac magazine
-- [ ] ProDoc309: mobile first
+- [x] ProDoc309: mobile first: atendendo as especificações no desktop e no mobile.
 - [ ] ProDoc310: off line (mensagem "disponível") 
 
 #### Melhorias
