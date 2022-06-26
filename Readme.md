@@ -76,6 +76,10 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 - [ ] ProDoc406: inserir logo do app no modal
 - [x] ProDoc407: criar issues e tarefas board projects para cada tarefa do desafio: rodando git flow e kanban para simular interações.
 
+#### Next Step
+
+- [ ] ProDoc501: marcar o grupo da legenda com space ou enter conforme acessibilidade
+
 #### Analisar itens de maior complexidade 
 
 1. o css do degradê 
