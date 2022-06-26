@@ -73,7 +73,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 - [x] ProDoc403: barra de rolagem vertical
 - [x] ProDoc404: cores de textos em modo light
 - [x] ProDoc405: inserir um texto real no modal: alguns textos
-- [ ] ProDoc406: inserir logo do app no modal
+- [x] ProDoc406: inserir logo do app no modal: adiado
 - [x] ProDoc407: criar issues e tarefas board projects para cada tarefa do desafio: rodando git flow e kanban para simular interações.
 
 #### Next Step
