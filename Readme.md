@@ -68,7 +68,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 
 #### Melhorias
 
-- [ ] ProDoc401: aprender manipular json
+- [x] ProDoc401: aprender manipular json: tornando a tabela dinâmica conforme alterações no json
 - [x] ProDoc402: inserir hover e melhor posicionar o botão do tema
 - [x] ProDoc403: barra de rolagem vertical
 - [x] ProDoc404: cores de textos em modo light
@@ -79,7 +79,8 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 #### Next Step
 
 - [ ] ProDoc501: marcar o grupo da legenda com space ou enter conforme acessibilidade
-
+- [ ] ProDoc502: revisar as variáveis usadas no css
+ 
 #### Analisar itens de maior complexidade 
 
 1. o css do degradê 
