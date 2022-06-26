@@ -3,7 +3,8 @@
 </h4> 
 
 <h1 align="center">
-    <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-0.jpg" />
+    <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-10.jpg" />
+    <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-14.jpg" />
 </h1>
 
 ## 🚀 Descrição do Desafio
@@ -98,12 +99,11 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 ## 🛠 Versão Final
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-0.jpg" width="400px"> 
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-5.jpg" width="400px">
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-1.jpg" width="400px">
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-4.jpg" width="400px"> 
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-2.jpg" width="400px">
-  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-3.jpg" width="400px"> 
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-10.jpg" width="400px"> 
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-11.jpg" width="400px">
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-12.jpg" width="400px">
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-13.jpg" width="400px"> 
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-14.jpg" width="400px">
 </p>
 
 [git]: https://git-scm.com/doc
