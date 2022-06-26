@@ -12,6 +12,7 @@ html[data-theme="dark"] {
   --toggle-border: #f1f5f6;
   --toggle-color: #f1f5f6;
   --toggle-background-color: #202e38;
+  --toggle-background-hover: rgba(255, 255, 255, 0.1);
 
   --footer-background-hover: rgba(255, 255, 255, 0.1);
   --footer-border: #fff;
@@ -34,6 +35,7 @@ html[data-theme="light"] {
   --toggle-border: #202e38;
   --toggle-color: #202e38;
   --toggle-background-color: #f1f5f6;
+  --toggle-background-hover: #fff;
 
   --footer-background-hover: #fff;
   --footer-border: #202e38;
@@ -74,23 +76,6 @@ body {
   color: #f1f5f6;
   background: var(--theme-background);
   margin: 0px;
-}
-
-header {
-  text-align: center;
-}
-
-header h1 {
-  font-size: 3.5vmax;
-  font-weight: 700;
-  margin-top: 0px;
-  padding: 1em 1em 0px 1em;
-}
-
-header h5 {
-  font-size: 2vmax;
-  font-weight: 400;
-  margin: 0 auto 2em;
 }
 
 #table {
@@ -259,8 +244,8 @@ footer a .icons {
 .toggler-container {
   margin-bottom: 10px;
   font-size: 50px;
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
   border-color: var(--toggle-border);
   border-radius: 10px;
   border-style: solid;
@@ -269,6 +254,14 @@ footer a .icons {
   align-items: center;
   background-color: var(--toggle-background-color);
   color: var(--toggle-color);
+  cursor: pointer;
+  position: fixed; 
+  top: 1vh;
+  left: 1vw;
+}
+
+.toggler-container:hover{
+  background-color: var( --toggle-background-hover);
 }
 
 @media (max-width: 750px) {

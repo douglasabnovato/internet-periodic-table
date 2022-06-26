@@ -37,7 +37,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [x] ProDoc101: Criar a tabela baseada no JSON fornecido, primeiramente estaticamente: a função getData() é responsável por fornecer os dados originais. Então, a função main chama a função renderTable passando os dados conforme precisa. A função renderTable manipula o html via DOM para renderizar conforme estilização.
 - [x] ProDoc102: Adicionar um efeito de hover que destaque o item da tabela ao passar o mouse sobre ele: recebe um tom forte da color base: efeito hover realizado no css com .table-item:hover e a DOM manipulou em createTableItem.
 - [x] ProDoc103: Adicionar um efeito de destacar os itens deste agrupamento, ao clicar em um item na legenda, todos ficam em um tom forte da color base. A função onLegendItemClicked é a responsável por selecionar todos os elementos da tabela que correspondem ao grupo da legenda. Ela é chamada pela createLegendItem com o evento que fica "ouvindo" o clica.
-- [x] ProDoc104: Aplicar estratégias de responsividade, mas sempre mantendo o aspecto de tabela periódica. Ficar flexíveis para caber em 1024px da tela sem distorção. Abaixo desta resolução, deve ser criado uma barra de rolagem ou algo criativo que possa ser utilizado em dispositivos móveis: uma media para organizar a legenda em colunas quando atinge max-width: 750px, e em #table-inner na linha min-width: 1024px para garantir que menor que esse width apresente uma barra de rolagem para visualizar a tabela inteira mas sem quebrar as linhas usando display: grid.
+- [x] ProDoc104: Aplicar estratégias de responsividade, mas sempre mantendo o aspecto de tabela periódica. Ficar flexíveis para caber em 1024px da tela sem distorção. Abaixo desta resolução, deve ser criado uma barra de rolagem ou algo criativo que possa ser utilizado em dispositivos móveis: uma media para organizar a legenda em colunas quando atinge max-width: 750px, e em #table-inner na linha min-width: 1024px para garantir que menor que esse width apresente uma barra de rolagem (#table{overflow-x: auto;}) para visualizar a tabela inteira mas sem quebrar as linhas usando display: grid.
 
 ### Desafios Extras
 
@@ -69,7 +69,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 #### Melhorias
 
 - [ ] ProDoc401: aprender manipular json
-- [ ] ProDoc402: posicionar o botão tema
+- [x] ProDoc402: inserir hover e melhor posicionar o botão do tema
 - [ ] ProDoc403: barra de rolagem vertical
 - [ ] ProDoc404: cores de textos em modo light
 - [ ] ProDoc405: inserir um texto real no modal
