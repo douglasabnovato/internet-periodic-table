@@ -59,7 +59,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 - [x] ProDoc302: Publicar a aplicação em um servidor gratuito: Utilizado o netlify permitindo acessar em [periodic table on netlify](https://musing-poitras-bf14e7.netlify.app/);
 - [x] ProDoc303: Editar ícones e links de redes sociais para meus perfis: direcionando para os meus perfils
 - [x] ProDoc304: Ter uma prévia descrição quando passa o mouse sobre o elemento: adiado
-- [ ] ProDoc305: Adicionar essa prévia descrição via json;
+- [x] ProDoc305: Adicionar essa prévia descrição via json: adiado
 - [x] ProDoc306: Salvar a preferência do tema escolhido via localstorage 
 - [ ] ProDoc307: html bem elaborado, exemplo: rel="noopener": link aberto com dependência com a página de origem, proteção 
 - [ ] ProDoc308: trabalhar persistência do dark e light seguindo as preferências do so: "prefers - css - color - schema", mac magazine
