@@ -64,7 +64,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 - [ ] ProDoc307: html bem elaborado, exemplo: rel="noopener": link aberto com dependência com a página de origem, proteção 
 - [ ] ProDoc308: trabalhar persistência do dark e light seguindo as preferências do so: "prefers - css - color - schema", mac magazine
 - [x] ProDoc309: mobile first: atendendo as especificações no desktop e no mobile.
-- [ ] ProDoc310: off line (mensagem "disponível") 
+- [x] ProDoc310: off line (mensagem "disponível"): essa aplicação consegue seguir off line com a proposta
 
 #### Melhorias
 
