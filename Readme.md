@@ -104,6 +104,8 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
   <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-12.jpg" width="400px">
   <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-13.jpg" width="400px"> 
   <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-14.jpg" width="400px">
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-15.jpg" height="400px">
+  <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-16.jpg" height="400px">
 </p>
 
 [git]: https://git-scm.com/doc
