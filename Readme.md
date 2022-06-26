@@ -70,7 +70,7 @@ Esse roteiro é apenas um norte de opções para realizar o desafio, mas você e
 
 - [x] ProDoc401: aprender manipular json: tornando a tabela dinâmica conforme alterações no json
 - [x] ProDoc402: inserir hover e melhor posicionar o botão do tema
-- [x] ProDoc403: barra de rolagem vertical
+- [x] ProDoc403: barra de rolagem vertical: bom funcionamento com scroll
 - [x] ProDoc404: cores de textos em modo light
 - [x] ProDoc405: inserir um texto real no modal: alguns textos
 - [x] ProDoc406: inserir logo do app no modal: adiado
