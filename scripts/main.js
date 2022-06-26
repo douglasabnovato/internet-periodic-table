@@ -1,5 +1,9 @@
 let themeToggler = document.getElementById("theme-toggler");
 
+let modeDarkTheme = localStorage.getItem('theme');
+
+document.documentElement.setAttribute("data-theme", modeDarkTheme);
+
 themeToggler.addEventListener("click", () => {
   
   let targetTheme;
