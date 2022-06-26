@@ -167,7 +167,7 @@ function getData() {
       Coluna: 1,
       Cor: "#CBC634",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "Dê agora o próximo passo em seu futuro profissional. Mais de 740 milhões de membros em todo o mundo estão esperando por você. Crie um perfil. 14 milhões de vagas. Comunidade profissional. Candidate-se facilmente. Cadidaturas facilitadas. Recomendações de vagas.",
       Grupo: "Social Media",
       Linha: 1,
       Nome: "Linkedin",
@@ -177,7 +177,7 @@ function getData() {
       Coluna: 2,
       Cor: "#CBC634",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "Facebook é uma rede social que conecta usuários em todo o mundo. Por meio de perfis — pessoais e profissionais —, é possível encontrar e conhecer pessoas, acompanhar personalidades públicas e marcas, criar, consumir e compartilhar conteúdos e muito mais. Por meio dele, o usuário também pode conversar via chat online com seus amigos e entrar em contato com empresas. Além disso, o Facebook dispõe de ferramentas que viabilizam a compra e venda de produtos dentro da plataforma. O aplicativo também disponibiliza uma série de integrações que vão desde jogos e testes até a sincronização de e-commerces e catálogos online.",
       Grupo: "Social Media",
       Linha: 1,
       Nome: "Facebook",
@@ -187,7 +187,7 @@ function getData() {
       Coluna: 7,
       Cor: "#5A88E5",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "Dribbble é uma comunidade online para a exposição de conteúdo artístico. Funciona como uma plataforma de autopromoção e networking para design gráfico, web design, ilustração, fotografia, e outras áreas criativas. Foi fundada em 2009 por Dan Cederholm and Rich Thornett, tornando-se pública em 2010.",
       Grupo: "Personal Development",
       Linha: 1,
       Nome: "Dribbble",
@@ -197,7 +197,7 @@ function getData() {
       Coluna: 8,
       Cor: "#58AC30",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "No contexto de ciência da computação, gerenciamento de dados e controle de versão, commit refere-se ao processo de tornar permanente um conjunto de alterações, ou seja, de efetivar as alterações. Um uso comum é a conclusão de uma transação.",
       Grupo: "Serious Work",
       Linha: 1,
       Nome: "Commits",
@@ -207,7 +207,7 @@ function getData() {
       Coluna: 9,
       Cor: "#58AC30",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "O Slack é um app de mensagens para empresas que conecta as pessoas às informações de que elas precisam. Reunindo pessoas para trabalhar como uma equipe unificada, o Slack transforma a forma como as organizações se comunicam.",
       Grupo: "Serious Work",
       Linha: 1,
       Nome: "Slack",
@@ -217,7 +217,7 @@ function getData() {
       Coluna: 1,
       Cor: "#FF616D",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "A Wikipédia é um projeto de enciclopédia multilíngue de licença livre, baseado na web e escrito de maneira colaborativa.",
       Grupo: "Fun Stuff",
       Linha: 2,
       Nome: "Wikipedia",
@@ -227,7 +227,7 @@ function getData() {
       Coluna: 2,
       Cor: "#FF616D",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "Spotify é um serviço de streaming de música, podcast e vídeo que foi lançado oficialmente em 7 de outubro de 2008. É o serviço de streaming de música mais popular e usado do mundo. Ele é desenvolvido pela startup Spotify AB em Estocolmo, Suécia.",
       Grupo: "Fun Stuff",
       Linha: 2,
       Nome: "Spotify",
@@ -237,7 +237,7 @@ function getData() {
       Coluna: 3,
       Cor: "#CBC634",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "Twitter é uma rede social e um serviço de microblog, que permite aos usuários enviar e receber atualizações pessoais de outros contatos, por meio do website do serviço, por SMS e por softwares específicos de gerenciamento.",
       Grupo: "Social Media",
       Linha: 2,
       Nome: "Twitter",
@@ -247,7 +247,7 @@ function getData() {
       Coluna: 4,
       Cor: "#CBC634",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "Twitch é um serviço de streaming de vídeo ao vivo que se concentra em streaming ao vivo de videogame, incluindo transmissões de competições de esportes eletrônicos. Além disso, oferece transmissões de música, conteúdo criativo e mais recentemente, streams na vida real.",
       Grupo: "Social Media",
       Linha: 2,
       Nome: "Twitch",
@@ -257,7 +257,7 @@ function getData() {
       Coluna: 5,
       Cor: "#58AC30",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.",
       Grupo: "Serious Work",
       Linha: 2,
       Nome: "Github",
@@ -267,7 +267,7 @@ function getData() {
       Coluna: 6,
       Cor: "#58AC30",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "O Yarn é um sistema de empacotamento de software desenvolvido em 2016 pelo Facebook para o ambiente de tempo de execução JavaScript Node.js.",
       Grupo: "Serious Work",
       Linha: 2,
       Nome: "Yarn",
@@ -277,7 +277,7 @@ function getData() {
       Coluna: 7,
       Cor: "#5A88E5",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "Designed 100 awesome illustrations during 100 days of illustration challenge (Now added more than 120+ illustrations). You can download all illustrations completely free and use these to design awesome - landing pages, mobile app or presentations.",
       Grupo: "Personal Development",
       Linha: 2,
       Nome: "Ilustratin",
@@ -297,17 +297,17 @@ function getData() {
       Coluna: 9,
       Cor: "#5A88E5",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "Wunderlist é um aplicativo de gerenciamento de tarefas baseado em nuvem descontinuado. Permitiu que os usuários criassem listas para gerenciar suas tarefas a partir de um smartphone, tablet, computador e smartwatch.",
       Grupo: "Personal Development",
       Linha: 2,
-      Nome: "Wunderlis",
+      Nome: "Wunderlist",
     },
     {
       Abreviacao: "Cv",
       Coluna: 1,
       Cor: "#FF616D",
       Descricao:
-        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+        "Cozedura, cozimento ou cocção é uma técnica culinária que consiste na preparação de alimentos mediante a utilização de calor, com o intuito de viabilizar ou facilitar a ingestão.",
       Grupo: "Fun Stuff",
       Linha: 3,
       Nome: "Cooking",
