@@ -4,7 +4,6 @@
 
 <h1 align="center">
     <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-10.jpg" />
-    <img alt="Tabela Periódica da Internet" title="#InternetPeriodicTable" src="./.github/tela-14.jpg" />
 </h1>
 
 ## 🚀 Descrição do Desafio
