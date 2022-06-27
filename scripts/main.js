@@ -24,7 +24,7 @@ function main() {
   fetch(url_file)
     .then((response) => response.json())
     .then((dados) => {
-      const companies = dados.Empresas;
+      const companies = dados.Enterprise;
       renderTable(companies);
 
       const groups = [...new Set(companies.map((c) => c.Grupo))];
