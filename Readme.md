@@ -48,7 +48,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [x] ProDoc204: Opções de acessibilidade no teclado, como trocar o foco dos itens na tabela ao apertar a tecla tab e acessar o modal apertando as teclas barra de espaço ou enter: fazer o gerenciamento do foco através da tecla tab com tableItem.tabIndex ="0" na criação do elemento da tabela e também com legendItem.tabIndex ="0" na criação do elemento da legenda. Agora para acionar como um clicar com space ou enter utilizar keycode de enter em string e space em inteiro no elemento da tabela.
 - [x] ProDoc205: Criar um botão na tela que ao clicar, contemple os temas escuro e claro: inserido uma imagem para mudar de tema dark e light: no header é inserido um botão que é um toggle que muda conforme o estado atual. Alternando dark e light.
 - [x] ProDoc206: A tabela deve ser dinâmica, caso um novo elemento seja adicionado ao JSON, ele deve ser adicionado visualmente a tabela;
-- [ ] ProDoc207: Caso um novo elemento de um novo grupo seja adicionado ao JSON, o efeito de selecionar o grupo na legenda deve contemplar esse novo elemento.
+- [x] ProDoc207: Caso um novo elemento de um novo grupo seja adicionado ao JSON, o efeito de selecionar o grupo na legenda deve contemplar esse novo elemento.
 
 Esse roteiro é apenas um norte de opções para realizar o desafio, mas você está livre para fazer outras coisas. Não se limite em termos de criatividade.  
 
