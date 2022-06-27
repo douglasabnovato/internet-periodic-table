@@ -21,13 +21,14 @@ themeToggler.addEventListener("click", () => {
 });
 
 function main() {
+
   const companies = getData();
   renderTable(companies);
 
   const groups = [...new Set(companies.map((c) => c.Grupo))];
   renderLegend(groups);
-
   setEventListeners();
+
 }
 
 function renderTable(companies) {
@@ -39,6 +40,7 @@ function renderLegend(groups) {
 }
 
 function createTableItem(company) {
+
   let tableItem = document.createElement("div");
   tableItem.tabIndex = "0";
   tableItem.className = "table-item";
@@ -74,9 +76,11 @@ function createTableItem(company) {
   tableItemInner.appendChild(title);
 
   return tableItem;
+
 }
 
 function createLegendItem(group) {
+
   let legendItem = document.createElement("div");
   legendItem.tabIndex = "0";
   legendItem.className = "legend-item";
@@ -102,9 +106,11 @@ function createLegendItem(group) {
   legendItem.appendChild(label);
 
   return legendItem;
+
 }
 
 function onTableItemClicked(company) {
+
   title = document.querySelector(".modal-title");
   title.style.color = company.Cor;
   title.innerHTML = company.Nome;
@@ -115,9 +121,11 @@ function onTableItemClicked(company) {
 
   document.querySelector(".modal-description").innerHTML = company.Descricao;
   document.querySelector(".modal").style.display = "flex";
+
 }
 
 function onLegendItemClicked(legendItem) {
+
   let tableItems = document.getElementsByClassName(legendItem.id);
 
   if (legendItem.checked) {
@@ -132,15 +140,19 @@ function onLegendItemClicked(legendItem) {
       item.classList.remove("highlight");
     }
   }
+
 }
 
 function render(iterable, rootElementId, createHTMLElement) {
+
   const rootElement = document.getElementById(rootElementId);
+
   rootElement.innerHTML = "";
 
   for (const item of iterable) {
     rootElement.appendChild(createHTMLElement(item));
   }
+  
 }
 
 function toAttr(string) {
@@ -463,6 +475,16 @@ function getData() {
       Nome: "Stats",
     },
     {
+      Abreviacao: "Dg",
+      Coluna: 2,
+      Cor: "#DDDAA7",
+      Descricao:
+        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+      Grupo: "Teste",
+      Linha: 5,
+      Nome: "Dgs",
+    },
+    {
       Abreviacao: "Ad",
       Coluna: 9,
       Cor: "#CBC634",
@@ -482,6 +504,36 @@ function getData() {
       Linha: 5,
       Nome: "Dgs",
     },
+    {
+      Abreviacao: "Dg",
+      Coluna: 3,
+      Cor: "#DDDAA7",
+      Descricao:
+        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+      Grupo: "Teste",
+      Linha: 5,
+      Nome: "Dgs",
+    },
+    {
+      Abreviacao: "Dg",
+      Coluna: 3,
+      Cor: "#DDDAA7",
+      Descricao:
+        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+      Grupo: "Teste",
+      Linha: 6,
+      Nome: "Dgs",
+    },
+    {
+      Abreviacao: "Dg",
+      Coluna: 3,
+      Cor: "#DDDAA7",
+      Descricao:
+        "Sailfish tiger shovelnose catfish Celebes rainbowfish sailfish threespine stickleback codling Atlantic trout salmon cuchia guitarfish swordfish sucker shortnose sucker. Bangus chain pickerel pineconefish cowfish rocket danio. Grunt sculpin sea dragon, glass catfish menhaden yellowtail barracuda ghost flathead demoiselle sandperch eel yellow moray swampfish. Sand goby sand tilefish orbicular batfish. Shortnose greeneye.",
+      Grupo: "Teste",
+      Linha: 1,
+      Nome: "Dgs",
+    }
   ];
 }
 
