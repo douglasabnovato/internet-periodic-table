@@ -19,7 +19,7 @@ themeToggler.addEventListener("click", () => {
 });
 
 function main() {
-  const url_file = "../assets/empresas.json";
+  const url_file = "../assets/enterprise.json";
 
   fetch(url_file)
     .then((response) => response.json())
